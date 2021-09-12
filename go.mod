@@ -1,3 +1,3 @@
-module github.com/YourOnly-One/youronlyone-hugo-defaults
+module github.com/YourOnly-One/yoo-hugo-defaults
 
 go 1.17
