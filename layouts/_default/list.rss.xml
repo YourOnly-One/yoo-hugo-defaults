@@ -1,0 +1,74 @@
+{{- /*
+    - Official current version of RSS spec: https://www.rssboard.org/rss-specification
+    - W3C Validator version: https://validator.w3.org/feed/docs/rss2.html
+*/ -}}
+{{- $rfc822 := "Mon, 02 Jan 2006 15:04:05 -0700" -}}
+{{- $pctx := . -}}
+{{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+{{- $pages := slice -}}
+{{- if or $.IsHome $.IsSection -}}
+{{- $pages = $pctx.RegularPages -}}
+{{- else -}}
+{{- $pages = $pctx.Pages -}}
+{{- end -}}
+{{- $limit := .Site.Config.Services.RSS.Limit -}}
+{{- if ge $limit 1 -}}
+{{- $pages = $pages | first $limit -}}
+{{- end -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{ . }} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+    {{ with .Site.LanguageCode }}<language>{{ . }}</language>{{ end }}
+    {{ with .Site.Copyright }}<copyright>{{ . }}</copyright>{{ end }}
+    {{ with .Site.Author.email }}<managingEditor>{{ . }}{{ with .Site.Author.name }} ({{ . }}){{ end }}</managingEditor>{{ end }}
+    {{ with .Site.Author.email }}<webMaster>{{ . }}{{ with .Site.Author.name }} ({{ . }}){{ end }}</webMaster>{{ end }}
+    {{ with .PublishDate }}<pubDate>{{ .Format $rfc822 | printf | safeHTML }}</pubDate>{{ end }}
+    {{ with .Lastmod }}<lastBuildDate>{{ .Format $rfc822 | printf | safeHTML }}</lastBuildDate>{{ end }}
+    {{- /* <category domain="">CATEGORY_NAME</category> */ -}}
+    <generator>Hugo {{ hugo.Version }}</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    {{- /* <cloud domain="rpc.sys.com" port="80" path="/RPC2" registerProcedure="myCloud.rssPleaseNotify" protocol="xml-rpc" /> */ -}}
+    <ttl>60</ttl>
+    {{- /* <image url="" title="" link=""></image> */ -}}
+    {{- /* <rating></rating> */ -}}
+    {{- with .OutputFormats.Get "RSS" -}}
+    {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{- end -}}
+    {{ range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <description>
+        {{- with .Params.images -}}
+          &lt;img src="{{ index . 0 | absURL }}" />
+        {{- else -}}
+          {{- $images := $.Resources.ByType "image" -}}
+          {{- $featured := $images.GetMatch "*feature*" -}}
+          {{- if not $featured }}{{ $featured = $images.GetMatch "{*cover*,*thumbnail*}" }}{{ end -}}
+          {{- with $featured -}}
+            &lt;img src="{{ $featured.Permalink }}" />
+          {{- else -}}
+            {{- with $.Site.Params.images -}}
+              &lt;img src="{{ index . 0 | absURL }}" />
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+        {{- if eq $.Site.Params.rssfull "true" -}}
+          {{- .Content | html -}}
+        {{- else -}}
+          {{- .Summary | plainify -}}
+        {{- end -}}
+      </description>
+      {{ with .Site.Author.email }}<author>{{ . }}{{ with .Site.Author.name }} ({{ . }}){{ end }}</author>{{ end }}
+      {{- /* <category domain="">CATEGORY_NAME</category> */ -}}
+      {{- /* <enclosure url="https://example.com/example.mp3" length="IN_BYTES" type="audio/mpeg" /> */ -}}
+      <guid>{{ .Permalink }}</guid>
+      {{ with .PublishDate }}<pubDate>{{ .Format $rfc822 | printf | safeHTML }}</pubDate>{{ end }}
+      <source url="{{ .Permalink }}">{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{ . }} on {{ end }}{{ .Site.Title }}{{ end }}</source>
+    </item>
+    {{ end }}
+  </channel>
+</rss>

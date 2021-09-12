@@ -1,0 +1,59 @@
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'none'; child-src 'self' https:; connect-src 'self' https:; font-src 'self' data: https:; frame-src 'self' https:; img-src 'self' https:; manifest-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; worker-src 'self' https:; base-uri 'self'; form-action 'self' https:;" />
+{{ with .Params.relcanonical }}
+  <link rel="canonical" href="{{ . | relLangURL }}" itemprop="url" />
+{{ else -}}
+  <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+{{ end -}}
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+{{- /* <meta http-equiv="feature-policy" content="accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain *; encrypted-media 'self'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen *; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'self'; payment 'none'; picture-in-picture *; publickey-credentials 'self'; speaker 'self'; sync-xhr *; usb 'none'; wake-lock 'none'; xr-spatial-tracking 'none';" /> */ -}}
+
+{{- if .IsTranslated -}}
+  {{ range .AllTranslations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
+  {{- end -}}
+  {{ range first 1 .AllTranslations }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+  {{- end -}}
+{{ end }}
+{{- range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />
+{{- end }}
+
+{{- with .Params.metarobots }}
+  <meta name="robots" content="{{ . }}" />
+{{- end }}
+{{- with .Params.redirectto }}
+  <meta http-equiv="refresh" content="0; url='{{ . | relLangURL }}'" />
+{{- end }}
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+{{- with .Site.Social.twitter_domain }}
+  <meta name="twitter:domain" content="{{ . }}">
+{{- end -}}
+{{- with .Site.Social.twitter_creator }}
+  <meta name="twitter:creator" content="{{ . }}" />
+{{- end -}}
+{{- with .Site.Social.twitter_site }}
+  <meta name="twitter:site" content="{{ . }}" />
+{{- end -}}
+{{- with .Site.Params.verify.naver }}
+  <meta name="naver-site-verification" content="{{ . }}" />
+{{- end -}}
+{{- with .Site.Params.verify.wot }}
+  <meta name="wot-verification" content="{{ . }}" />
+{{ end -}}
+
+{{- template "_internal/schema.html" . -}}
+{{- template "_internal/opengraph.html" . -}}
+{{- template "_internal/twitter_cards.html" . -}}
+{{- template "_internal/googletagmanager.html" . -}}
+
+{{ hugo.Generator }}
+
+<link href="https://fonts.googleapis.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
+<link href="https://cdn.jsdelivr.net" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
+<link href="https://unpkg.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
+<link href="https://cdnjs.cloudflare.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
+<link href="https://ajax.cloudflare.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />

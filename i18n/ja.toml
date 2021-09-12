@@ -1,0 +1,140 @@
+# Translations for Nihongo (Japanese)
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# BGN: YourOnly.One: Global
+  [home]
+    other = "ホーム"
+  [blog]
+    other = "ブログ"
+  [translations]
+    other = "翻訳"
+  [postAvailable]
+    other = "でも利用可能"
+  [featuredposts]
+    other = "おすすめの投稿"
+  [recentposts]
+    other = "最近の投稿"
+  [allChannels]
+    other = "すべてのチャンネル"
+  [allCategories]
+    other = "カテゴリー一覧"
+  [allTags]
+    other = "タグ一覧"
+  [allSeries]
+    other = "全シリーズ"
+  [allPosts]
+    other = "すべての投稿"
+  [channel]
+    one = "1チャンネル"
+    other = "{{ .Count }}チャンネル"
+  [channels]
+    one = "1チャンネル"
+    other = "{{ .Count }}チャンネル"
+  [category]
+    one = "1 カテゴリー"
+    other = "{{ .Count }} カテゴリー"
+  [categories]
+    one = "1 カテゴリー"
+    other = "{{ .Count }} カテゴリー"
+  [tag]
+    one = "1 タグ"
+    other = "{{ .Count }} タグ"
+  [tags]
+    one = "1 タグ"
+    other = "{{ .Count }} タグ"
+  [series]
+    one = "1シリーズ"
+    other = "{{ .Count }}シリーズ"
+  [post]
+    one = "1件の投稿"
+    other = "{{ .Count }}件の投稿"
+  [posts]
+    one = "1件の投稿"
+    other = "{{ .Count }}件の投稿"
+  [PostBy]
+    other = "によって書かれた"
+  [search]
+    other = "探す"
+  [NowPlaying]
+    other = "再生中"
+# END: YourOnly.One: Global
+
+# BGN: YourOnly.One: attribution and license
+  [attribution_by]
+    other = "沿って"
+  [attribution_licensedunder]
+    other = "の下で認可された"
+  [attribution_cc0_extent]
+    other = "法律の下で可能な範囲で"
+  [attribution_cc0_waived]
+    other = "すべての著作権および関連する権利または隣接権を放棄しました"
+  [attribution_cc0_publishedfrom]
+    other = "この作品はから公開されています"
+  [attribution_publicdomain]
+    other = "既知の著作権制限なし"
+  [attribution_allrightsreserved]
+    other = "この画像および/またはスクリーンショットに表示されている作品は著作権で保護されています"
+  [attribution_allrightsreservedcover]
+    other = "この記事で使用されている表紙の画像は著作権で保護されています"
+  [attribution_ccbysa4]
+    other = "クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス"
+  [quote_src]
+    other = "、"             # add a space before if using a word
+  [copyleft]
+    other = "コピーレフト"
+  [ContentOnBGN]
+    other = "のコンテンツ"
+  [ContentOnEND]
+    other = " 特に指定しない限り。"
+  [PermissionsBeyondScope]
+    other = "このライセンスの範囲を超える許可は、次のURLで入手できる場合があります"
+# END: YourOnly.One: attribution and license
+
+# BGN: YourOnly.One: generic words
+  [word_is]
+    other = "です"
+  [word_has]
+    other = "持っている"
+  [word_to]
+    other = "に"
+  [word_coverimage]
+    other = "・ 表紙画像："
+  [word_countryname]
+    other = "フィリピン"
+# END: YourOnly.One: generic words
+
+# BGN: YourOnly.One: punctuations
+  [punctuation_fullstop]
+    other = "。"
+  [punctuation_pause]
+    other = "、"
+# END: YourOnly.One: punctuations
+
+# BGN: YourOnly.One: footer
+  [BestViewedInBGN]
+    other = "ベストビューイン"
+  [BestViewedInEND]
+    other = "ブラウザ。"
+  [about]
+    other = "私について"
+  [terms]
+    other = "利用規約"
+  [privacy]
+    other = "個人情報保護方針"
+  [legal]
+    other = "法的通知"
+  [disclosure]
+    other = "開示"
+  [contact]
+    other = "私に連絡して"
+  [FreeHostingBy]
+    other ="による無料の250 GBホスティング"
+  [GeckoBased]
+    other = "Geckoベース"
+  [GoannaBased]
+    other = "Goannaベース"
+  [poweredby]
+    other = "搭載"
+  [themeby]
+    other = "テーマ"
+# END: YourOnly.One: footer

@@ -1,0 +1,41 @@
+#[module]
+#  [module.hugoVersion]
+#    #extended = true
+#    min = "0.88.0"
+#    #max = ""
+
+
+#######  #######  #######  #######  #######  #######  #######  #######
+
+
+[social]
+  #bitbucket = ""
+  #deviantart = "laibcoms"                                  # URL-name
+  #email = ""                                             # email address; leave empty
+  facebook = "YourOnly.One0"                              # URL-name
+  facebook_admin = "10157987154131691,441386337292877"    # This needs to be a page admin to get domain insights
+  facebook_appid = "183794425326191"                      # This needs to be a page admin to get domain insights
+  github = "techmagus"                                    # username
+  #gitlab = ""
+  instagram = "YourOnly.One"                              # username
+  keybase = "yukino"
+  #linkedin = "youronlyone"                               # URL-name
+  #linkedin_company = ""                                    # URL-name
+  mastodon = "mastodon.social/@youronlyone"               # example.com/@username
+  #medium = ""
+  #pinterest = ""                                         # username
+  #quora = ""                                             # username
+  #reddit = "Laibcoms"                                      # username
+  #skype = ""                                             # username or email
+  #stackoverflow = "306674"                               # User Number
+  strava = "faithfulathlete"                              # URL-name or userID number
+  #telegram = ""                                            # username
+  twitter = "YourOnlyOne7"                                # username; do not include @-at
+  twitter_domain = "YourOnly.One"                         # This domain shows in twitter cards as "View on `twitter_domain`"
+  twitter_creator = "@YourOnlyOne7"                       # @username
+  twitter_site = "@YourOnlyOne7"                          # @username
+  #wordpress = ""
+  youtube = "YourOnlyOne7"                                # URL-name
+
+
+#######  #######  #######  #######  #######  #######  #######  #######
