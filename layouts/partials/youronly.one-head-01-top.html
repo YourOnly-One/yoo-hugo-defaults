@@ -49,13 +49,33 @@
 {{- template "_internal/opengraph.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 {{- template "_internal/googletagmanager.html" . -}}
+<!-- BGN: JSON-LD -->
+  {{ partial "schemas/schema_Global.html" . }}
+<!-- END: JSON-LD -->
 
 {{ hugo.Generator }}
 
-<link href="https://fonts.googleapis.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
-<link href="https://cdn.jsdelivr.net" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
-<link href="https://unpkg.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
-<link href="https://cdnjs.cloudflare.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
-<link href="https://ajax.cloudflare.com" rel="dns-prefetch preconnect" referrerpolicy="strict-origin-when-cross-origin" />
+{{/* See: https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch */}}
+<!-- BGN: preconnect and dns-prefetch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+  <!-- <link rel="preconnect" href="https://unpkg.com" crossorigin /> -->
+  <link rel="dns-prefetch" href="https://unpkg.com" />
+  <!-- <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin /> -->
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  <!-- <link rel="preconnect" href="https://ajax.cloudflare.com" crossorigin /> -->
+  <link rel="dns-prefetch" href="https://ajax.cloudflare.com" />
+<!-- END: preconnect and dns-prefetch -->
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+HK:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans+SC:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+{{/* See: https://csswizardry.com/2020/05/the-fastest-google-fonts/ */}}
+<!-- BGN: Google Fonts API v2 -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Music&family=Noto+Rashi+Hebrew:wght@400;700&family=Noto+Sans+Buhid&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+HK:wght@400;700&family=Noto+Sans+Hanunoo&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+Math&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Phoenician&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+Symbols+2&family=Noto+Sans+Symbols:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Hebrew:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Music&family=Noto+Rashi+Hebrew:wght@400;700&family=Noto+Sans+Buhid&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+HK:wght@400;700&family=Noto+Sans+Hanunoo&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+Math&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Phoenician&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+Symbols+2&family=Noto+Sans+Symbols:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Hebrew:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Music&family=Noto+Rashi+Hebrew:wght@400;700&family=Noto+Sans+Buhid&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+HK:wght@400;700&family=Noto+Sans+Hanunoo&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+Math&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Phoenician&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+Symbols+2&family=Noto+Sans+Symbols:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Hebrew:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
+  </noscript>
+<!-- END: Google Fonts API v2 -->

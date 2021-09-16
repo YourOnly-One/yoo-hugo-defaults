@@ -2,9 +2,16 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
 {{- end -}}
 
+{{- if .Params.mathjax }}
+  <!-- BGN: MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!-- END: MathJax -->
+{{ end -}}
+
 <!-- BGN: Yuki -->
 	<link href="https://cdn.jsdelivr.net/npm/fork-awesome/css/fork-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
-	<link href="https://rsc.YourOnly.One/css/paninap-fonts.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="https://rsc.youronly.one/css/paninap-fonts.min.css" media="all" rel="stylesheet" type="text/css" />
 	<script defer="defer" src="https://cdn.jsdelivr.net/npm/twemoji/dist/twemoji.min.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">//<![CDATA[
 		/* Source: https://stackoverflow.com/a/40310653/306674 */
@@ -34,7 +41,7 @@
 	//]]></script>
 
 	<link href="https://cdn.jsdelivr.net/gh/cc-icons/cc-icons/css/cc-icons.min.css" media="all" rel="stylesheet" type="text/css" />
-	<link href="https://rsc.YourOnly.One/css/yuki-style.min.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="https://rsc.youronly.one/css/yuki-style.min.css" media="all" rel="stylesheet" type="text/css" />
 
 	<link href="https://iam.youronly.one" rel="author me" />
 	<link href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" />
@@ -225,17 +232,6 @@
 
 	<!-- END: rel-me -->
 <!-- END: Yuki -->
-
-<!-- BGN: JSON-LD -->
-  {{ partial "schemas/schema_Global.html" . }}
-<!-- END: JSON-LD -->
-
-{{- if .Params.mathjax }}
-	<!-- BGN: MathJax -->
-		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-	<!-- END: MathJax -->
-{{ end -}}
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://rsc.youronly.one/favicon/{{ $.Site.Params.subdir }}/apple-touch-icon.png?{{ $.Site.Params.faviconcache }}={{ $.Site.Params.faviconbuster }}">
 <link rel="icon" type="image/svg+xml" href="https://rsc.youronly.one/favicon/{{ $.Site.Params.subdir }}/favicon.svg?{{ $.Site.Params.faviconcache }}={{ $.Site.Params.faviconbuster }}">
