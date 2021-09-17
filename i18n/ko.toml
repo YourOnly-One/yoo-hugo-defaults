@@ -53,6 +53,8 @@
     other = "{{ .Count }} 게시물"
   [PostBy]
     other = "작성자"
+  [readmore]
+    other = "더 읽기"
   [search]
     other = "검색"
   [NowPlaying]

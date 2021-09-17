@@ -53,6 +53,8 @@
     other = "{{ .Count }} posts"
   [PostBy]
     other = "Post by"
+  [readmore]
+    other = "Read more"
   [search]
     other = "Search"
   [NowPlaying]

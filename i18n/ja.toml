@@ -53,6 +53,8 @@
     other = "{{ .Count }}件の投稿"
   [PostBy]
     other = "によって書かれた"
+  [readmore]
+    other = "続きを読む"
   [search]
     other = "探す"
   [NowPlaying]
