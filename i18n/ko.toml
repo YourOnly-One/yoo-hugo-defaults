@@ -131,12 +131,12 @@
     other = "폭로"
   [contact]
     other = "문의하기"
-  [FreeHostingBy]
-    other ="무료 250 GB 호스팅"
   [GeckoBased]
     other = "Gecko 기반"
   [GoannaBased]
     other = "Goanna 기반"
+  [freehostingby]
+    other ="무료 250 GB 호스팅"
   [poweredby]
     other = "에 의해 구동"
   [themeby]
@@ -152,6 +152,8 @@
     other = "사랑과 관계"
   [snoworld]
     other = "스노우 월드"
+  [techmagus]
+    other ="테크 마구스"
   [versesspace]
     other = "Verses.Space"
   [waybelievers]
