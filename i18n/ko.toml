@@ -6,6 +6,8 @@
     other = "집"
   [blog]
     other = "블로그"
+  [blogs]
+    other = "블로그"
   [translations]
     other = "번역"
   [postAvailable]
@@ -140,3 +142,101 @@
   [themeby]
     other = "테마별"
 # END: YourOnly.One: footer
+
+# BGN: Channels
+  [confidentraveler]
+    other = "자신감있는 여행자"
+  [faithfulathlete]
+    other = "충실한 운동 선수"
+  [loverelationship]
+    other = "사랑과 관계"
+  [snoworld]
+    other = "스노우 월드"
+  [versesspace]
+    other = "Verses.Space"
+  [waybelievers]
+    other = "신자들의 길"
+  [yookichronicles]
+    other = "YOOki 연대기"
+  [yugenbard]
+    other = "幽 玄 음유 시인"
+# END: Channels
+
+# BGN: Series
+  [26virtual]
+    other = "26virtual"
+  [pray]
+    other = "기도하고"
+  [torah]
+    other = "성경"
+  [truename]
+    other = "실명"
+# END: Series
+
+# BGN: Categories
+  [appointedtimes]
+    other = "약속 시간"
+  [discourse]
+    other = "담화"
+  [films]
+    other = "영화"
+  [life]
+    other = "삶"
+  [literature]
+    other = "문학"
+  [love]
+    other = "사랑"
+  [music]
+    other = "음악"
+  [opinion]
+    other = "의견"
+  [photography]
+    other = "사진술"
+  [sports]
+    other = "스포츠"
+  [tv]
+    other = "TV"
+# END: Categories
+
+# BGN: Tags
+  [adaptations]
+    other = "적응"
+  [ccbysa]
+    other = "크리에이티브 커먼즈 저작자표시-동일조건변경허락 라이선스"
+  [fanfiction]
+    other = "팬 픽션"
+  [kdrama]
+    other = "한국 드라마"
+  [marriageproposals]
+    other = "결혼 제안"
+  [mathematics]
+    other = "수학"
+  [mobilephotography]
+    other = "모바일 사진"
+  [nature]
+    other = "자연"
+  [poems]
+    other = "시"
+  [publicdomain]
+    other = "공개 도메인"
+  [quotes]
+    other = "인용 부호"
+  [research]
+    other = "연구"
+  [reviews]
+    other = "리뷰"
+  [running]
+    other = "달리는"
+  [sabbath]
+    other = "안식일"
+  [traditions]
+    other = "전통"
+  [toys]
+    other = "장난감"
+  [trivia]
+    other = "하찮은 일"
+  [verses]
+    other = "구절"
+  [videos]
+    other = "비디오"
+# END: Tags

@@ -6,6 +6,8 @@
     other = "Home"
   [blog]
     other = "Blog"
+  [blogs]
+    other = "Blog"
   [translations]
     other = "Translations"
   [postAvailable]
@@ -140,3 +142,101 @@
   [themeby]
     other = "Theme by"
 # END: YourOnly.One: footer
+
+# BGN: Channels
+  [confidentraveler]
+    other = "Confident Traveler"
+  [faithfulathlete]
+    other = "Faithful Athlete"
+  [loverelationship]
+    other = "Love and Relationship"
+  [snoworld]
+    other = "Snoworld"
+  [versesspace]
+    other = "Verses.Space"
+  [waybelievers]
+    other = "Way of Believers"
+  [yookichronicles]
+    other = "YOOki Chronicles"
+  [yugenbard]
+    other = "Yūgen Bard"
+# END: Channels
+
+# BGN: Series
+  [26virtual]
+    other = "26virtual"
+  [pray]
+    other = "Prayer"
+  [torah]
+    other = "Torah"
+  [truename]
+    other = "True Name"
+# END: Series
+
+# BGN: Categories
+  [appointedtimes]
+    other = "Appointed Times"
+  [discourse]
+    other = "Discourse"
+  [films]
+    other = "Films"
+  [life]
+    other = "Life"
+  [literature]
+    other = "Literature"
+  [love]
+    other = "Love"
+  [music]
+    other = "Music"
+  [opinion]
+    other = "Opinion"
+  [photography]
+    other = "Photography"
+  [sports]
+    other = "Sports"
+  [tv]
+    other = "TV"
+# END: Categories
+
+# BGN: Tags
+  [adaptations]
+    other = "adaptations"
+  [ccbysa]
+    other = "cc-by-sa"
+  [fanfiction]
+    other = "fan fiction"
+  [kdrama]
+    other = "k-drama"
+  [marriageproposals]
+    other = "marriage proposals"
+  [mathematics]
+    other = "mathematics"
+  [mobilephotography]
+    other = "mobile photography"
+  [nature]
+    other = "nature"
+  [poems]
+    other = "poems"
+  [publicdomain]
+    other = "public domain"
+  [quotes]
+    other = "quotes"
+  [research]
+    other = "research"
+  [reviews]
+    other = "reviews"
+  [running]
+    other = "running"
+  [sabbath]
+    other = "sabbath"
+  [traditions]
+    other = "traditions"
+  [toys]
+    other = "toys"
+  [trivia]
+    other = "trivia"
+  [verses]
+    other = "verses"
+  [videos]
+    other = "videos"
+# END: Tags

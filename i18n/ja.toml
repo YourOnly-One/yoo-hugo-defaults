@@ -6,6 +6,8 @@
     other = "ホーム"
   [blog]
     other = "ブログ"
+  [blogs]
+    other = "ブログ"
   [translations]
     other = "翻訳"
   [postAvailable]
@@ -140,3 +142,101 @@
   [themeby]
     other = "テーマ"
 # END: YourOnly.One: footer
+
+# BGN: Channels
+  [confidentraveler]
+    other = "自信のある旅行者"
+  [faithfulathlete]
+    other = "忠実なアスリート"
+  [loverelationship]
+    other = "愛と関係"
+  [snoworld]
+    other = "雪の世界"
+  [versesspace]
+    other = "Verses.Space"
+  [waybelievers]
+    other = "信者の道"
+  [yookichronicles]
+    other = "YOOkiクロニクル"
+  [yugenbard]
+    other = "幽玄吟遊詩人"
+# END: Channels
+
+# BGN: Series
+  [26virtual]
+    other = "26virtual"
+  [pray]
+    other = "祈る"
+  [torah]
+    other = "聖書"
+  [truename]
+    other = "本当の名前"
+# END: Series
+
+# BGN: Categories
+  [appointedtimes]
+    other = "決められた時間"
+  [discourse]
+    other = "談話"
+  [films]
+    other = "映画"
+  [life]
+    other = "人生"
+  [literature]
+    other = "文学"
+  [love]
+    other = "愛"
+  [music]
+    other = "音楽"
+  [opinion]
+    other = "意見"
+  [photography]
+    other = "写真撮影"
+  [sports]
+    other = "スポーツ"
+  [tv]
+    other = "テレビ"
+# END: Categories
+
+# BGN: Tags
+  [adaptations]
+    other = "適応"
+  [ccbysa]
+    other = "クリエイティブ・コモンズ 表示 - 継承 ライセンス"
+  [fanfiction]
+    other = "ファンフィクション"
+  [kdrama]
+    other = "韓国ドラマ"
+  [marriageproposals]
+    other = "結婚の申し込み"
+  [mathematics]
+    other = "数学"
+  [mobilephotography]
+    other = "モバイル写真"
+  [nature]
+    other = "自然"
+  [poems]
+    other = "詩"
+  [publicdomain]
+    other = "パブリックドメイン"
+  [quotes]
+    other = "引用"
+  [research]
+    other = "リサーチ"
+  [reviews]
+    other = "レビュー"
+  [running]
+    other = "ランニング"
+  [sabbath]
+    other = "安息日"
+  [traditions]
+    other = "伝統"
+  [toys]
+    other = "おもちゃ"
+  [trivia]
+    other = "トリビア"
+  [verses]
+    other = "詩"
+  [videos]
+    other = "ビデオ"
+# END: Tags
