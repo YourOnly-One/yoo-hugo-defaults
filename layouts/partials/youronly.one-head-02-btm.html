@@ -2,7 +2,7 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
 {{- end -}}
 
-{{- if .Params.mathjax }}
+{{- with eq .Params.math true }}
   <!-- BGN: MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" crossorigin="anonymous"></script>
