@@ -53,13 +53,13 @@
   [posts]
     one = "1 post"
     other = "{{ .Count }} posts"
-  [PostBy]
+  [postby]
     other = "Post by"
   [readmore]
     other = "Read more"
   [search]
     other = "Search"
-  [NowPlaying]
+  [nowplaying]
     other = "Now Playing"
 # END: YourOnly.One: Global
 

@@ -53,13 +53,13 @@
   [posts]
     one = "1件の投稿"
     other = "{{ .Count }}件の投稿"
-  [PostBy]
+  [postby]
     other = "によって書かれた"
   [readmore]
     other = "続きを読む"
   [search]
     other = "探す"
-  [NowPlaying]
+  [nowplaying]
     other = "再生中"
 # END: YourOnly.One: Global
 

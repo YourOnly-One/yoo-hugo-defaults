@@ -53,13 +53,13 @@
   [posts]
     one = "게시물 1 개"
     other = "{{ .Count }} 게시물"
-  [PostBy]
+  [postby]
     other = "작성자"
   [readmore]
     other = "더 읽기"
   [search]
     other = "검색"
-  [NowPlaying]
+  [nowplaying]
     other = "지금 재생 중"
 # END: YourOnly.One: Global
 
