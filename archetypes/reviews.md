@@ -35,7 +35,20 @@ contenttypes = ["CriticReview"]                                                 
 #audio = [""]                                                        # used by og:audio, etc.
 images = [""]                                                       # used by og:images, etc.; first image is cover image
 
-# For /yuki/
+# For /yuki/ choose one and remove everything else
+#[author]
+#  name = ""
+#  #email = ""
+#  homepage = ""
+#  avatar = ""
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
 #[author]
 #  name = "Confident Traveler / 自信のある旅行者 / 자신감있는 여행자"
 #  #email = ""
