@@ -140,8 +140,53 @@
   [poweredby]
     other = "에 의해 구동"
   [themeby]
-    other = "테마별"
+    other = "테마 으로"
 # END: YourOnly.One: footer
+
+# BGN: Social services
+  [baidu]
+    other = "Baidu"
+  [diaspora]
+    other = "*diaspora"
+  [douban]
+    other = "Douban"
+  [facebook]
+    other = "Facebook"
+  [hackernews]
+    other = "Hacker News"
+  [hatena]
+    other = "Hatena"
+  [kakao]
+    other = "Kakao"
+  [kakaotalk]
+    other = "KakaoTalk"
+  [keybase]
+    other = "Keybase"
+  [line]
+    other = "Line"
+  [linkedin]
+    other = "LinkedIn"
+  [messenger]
+    other = "Messenger"
+  [pinterest]
+    other = "Pinterest"
+  [reddit]
+    other = "Reddit"
+  [skype]
+    other = "Skype"
+  [telegram]
+    other = "Telegram"
+  [tumblr]
+    other = "Tumblr"
+  [twitter]
+    other = "Twitter"
+  [wechat]
+    other = "WeChat"
+  [weibo]
+    other = "Weibo"
+  [whatsapp]
+    other = "WhatsApp"
+# END: Social services
 
 # BGN: Channels
   [confidentraveler]
@@ -182,6 +227,8 @@
     other = "담화"
   [films]
     other = "영화"
+  [howto]
+    other = "어떻게"
   [life]
     other = "삶"
   [literature]
@@ -207,6 +254,8 @@
     other = "크리에이티브 커먼즈 저작자표시-동일조건변경허락 라이선스"
   [fanfiction]
     other = "팬 픽션"
+  [html]
+    other = "HTML"
   [kdrama]
     other = "한국 드라마"
   [marriageproposals]

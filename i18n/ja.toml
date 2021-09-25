@@ -140,8 +140,53 @@
   [poweredby]
     other = "搭載"
   [themeby]
-    other = "テーマ"
+    other = "テーマ から"
 # END: YourOnly.One: footer
+
+# BGN: Social services
+  [baidu]
+    other = "Baidu"
+  [diaspora]
+    other = "*diaspora"
+  [douban]
+    other = "Douban"
+  [facebook]
+    other = "Facebook"
+  [hackernews]
+    other = "Hacker News"
+  [hatena]
+    other = "Hatena"
+  [kakao]
+    other = "Kakao"
+  [kakaotalk]
+    other = "KakaoTalk"
+  [keybase]
+    other = "Keybase"
+  [line]
+    other = "Line"
+  [linkedin]
+    other = "LinkedIn"
+  [messenger]
+    other = "Messenger"
+  [pinterest]
+    other = "Pinterest"
+  [reddit]
+    other = "Reddit"
+  [skype]
+    other = "Skype"
+  [telegram]
+    other = "Telegram"
+  [tumblr]
+    other = "Tumblr"
+  [twitter]
+    other = "Twitter"
+  [wechat]
+    other = "WeChat"
+  [weibo]
+    other = "Weibo"
+  [whatsapp]
+    other = "WhatsApp"
+# END: Social services
 
 # BGN: Channels
   [confidentraveler]
@@ -182,6 +227,8 @@
     other = "談話"
   [films]
     other = "映画"
+  [howto]
+    other = "方法"
   [life]
     other = "人生"
   [literature]
@@ -207,6 +254,8 @@
     other = "クリエイティブ・コモンズ 表示 - 継承 ライセンス"
   [fanfiction]
     other = "ファンフィクション"
+  [html]
+    other = "HTML"
   [kdrama]
     other = "韓国ドラマ"
   [marriageproposals]
