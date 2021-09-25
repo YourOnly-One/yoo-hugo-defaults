@@ -45,13 +45,13 @@
   <meta name="wot-verification" content="{{ . }}" />
 {{ end -}}
 
+<!-- BGN: JSON-LD -->
+  {{ partial "schemas/schema_Global.html" . }}
+<!-- END: JSON-LD -->
 {{- template "_internal/schema.html" . -}}
 {{- template "_internal/opengraph.html" . -}}
 {{- template "_internal/twitter_cards.html" . -}}
 {{- template "_internal/googletagmanager.html" . -}}
-<!-- BGN: JSON-LD -->
-  {{ partial "schemas/schema_Global.html" . }}
-<!-- END: JSON-LD -->
 
 {{ hugo.Generator }}
 
