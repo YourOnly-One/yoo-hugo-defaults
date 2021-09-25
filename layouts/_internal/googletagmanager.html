@@ -1,11 +1,6 @@
-{{- with .Site.Params.googleTagManager -}}
+{{- with and (.Site.Params.googleTagManager) (not .Site.IsServer) -}}
   <script>
     (function(w,d,s,l,i) {
-      {{- /* BGN: Disable localhost */ -}}
-      if (["localhost", "127.0.0.1", "::1"].indexOf(window.location.hostname) != -1) {
-        return;
-      }
-      {{- /* END: Disable localhost */ -}}
       w[l]=w[l]||[];
       w[l].push( { 'gtm.start': new Date().getTime(), event:'gtm.js' } );
       var f=d.getElementsByTagName(s)[0],
