@@ -1,6 +1,27 @@
 # Translations for Philippine English
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+# BGN: Date and Time Formats
+  [datetimelongtzd]
+    other = "2006-01-02 15:04:05Z07:00"
+  [datetimelongtzn]
+    other = "2006-01-02 15:04:05 MST"
+  [datetimetzd]
+    other = "2006-01-02 15:04Z07:00"
+  [datetimetzn]
+    other = "2006-01-02 15:04 MST"
+  [date]
+    other = "2006-01-02"
+  [timelongtzd]
+    other = "15:04:05Z07:00"
+  [timelongtzn]
+    other = "15:04:05 MST"
+  [timetzd]
+    other = "15:04Z07:00"
+  [timetzn]
+    other = "15:04 MST"
+# END: Date and Time Formats
+
 # BGN: YourOnly.One: Global
   [home]
     other = "Home"
@@ -27,32 +48,34 @@
   [allPosts]
     other = "All Posts"
   [channel]
-    one = "1 channel"
-    other = "{{ .Count }} channels"
+    one = "1 Channel"
+    other = "{{ .Count }} Channels"
   [channels]
-    one = "1 channel"
-    other = "{{ .Count }} channels"
+    one = "1Channel"
+    other = "{{ .Count }} Channels"
   [category]
-    one = "1 category"
-    other = "{{ .Count }} categories"
+    one = "1 Category"
+    other = "{{ .Count }} Categories"
   [categories]
-    one = "1 category"
-    other = "{{ .Count }} categories"
+    one = "1 Category"
+    other = "{{ .Count }} Categories"
   [tag]
-    one = "1 tag"
-    other = "{{ .Count }} tags"
+    one = "1 Tag"
+    other = "{{ .Count }} Tags"
   [tags]
-    one = "1 tag"
-    other = "{{ .Count }} tags"
+    one = "1 Tag"
+    other = "{{ .Count }} Tags"
+  [readtime]
+    other = "{{ .Count }} min read"
   [series]
-    one = "1 series"
-    other = "{{ .Count }} series"
+    one = "1 Series"
+    other = "{{ .Count }} Series"
   [post]
-    one = "1 post"
-    other = "{{ .Count }} posts"
+    one = "1 Post"
+    other = "{{ .Count }} Posts"
   [posts]
-    one = "1 post"
-    other = "{{ .Count }} posts"
+    one = "1 Post"
+    other = "{{ .Count }} Posts"
   [postby]
     other = "Post by"
   [readmore]
@@ -187,107 +210,3 @@
   [whatsapp]
     other = "WhatsApp"
 # END: Social services
-
-# BGN: Channels
-  [confidentraveler]
-    other = "Confident Traveler"
-  [faithfulathlete]
-    other = "Faithful Athlete"
-  [loverelationship]
-    other = "Love and Relationship"
-  [snoworld]
-    other = "Snoworld"
-  [techmagus]
-    other = "techmagus"
-  [versesspace]
-    other = "Verses.Space"
-  [waybelievers]
-    other = "Way of Believers"
-  [yookichronicles]
-    other = "YOOki Chronicles"
-  [yugenbard]
-    other = "Yūgen Bard"
-# END: Channels
-
-# BGN: Series
-  [26virtual]
-    other = "26virtual"
-  [pray]
-    other = "Prayer"
-  [torah]
-    other = "Torah"
-  [truename]
-    other = "True Name"
-# END: Series
-
-# BGN: Categories
-  [appointedtimes]
-    other = "Appointed Times"
-  [discourse]
-    other = "Discourse"
-  [films]
-    other = "Films"
-  [howto]
-    other = "How To"
-  [life]
-    other = "Life"
-  [literature]
-    other = "Literature"
-  [love]
-    other = "Love"
-  [music]
-    other = "Music"
-  [opinion]
-    other = "Opinion"
-  [photography]
-    other = "Photography"
-  [sports]
-    other = "Sports"
-  [tv]
-    other = "TV"
-# END: Categories
-
-# BGN: Tags
-  [adaptations]
-    other = "adaptations"
-  [ccbysa]
-    other = "cc-by-sa"
-  [fanfiction]
-    other = "fan fiction"
-  [html]
-    other = "HTML"
-  [kdrama]
-    other = "k-drama"
-  [marriageproposals]
-    other = "marriage proposals"
-  [mathematics]
-    other = "mathematics"
-  [mobilephotography]
-    other = "mobile photography"
-  [nature]
-    other = "nature"
-  [poems]
-    other = "poems"
-  [publicdomain]
-    other = "public domain"
-  [quotes]
-    other = "quotes"
-  [research]
-    other = "research"
-  [reviews]
-    other = "reviews"
-  [running]
-    other = "running"
-  [sabbath]
-    other = "sabbath"
-  [traditions]
-    other = "traditions"
-  [toys]
-    other = "toys"
-  [trivia]
-    other = "trivia"
-  [verses]
-    other = "verses"
-  [videos]
-    other = "videos"
-# END: Tags

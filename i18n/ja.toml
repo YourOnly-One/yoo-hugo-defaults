@@ -1,6 +1,27 @@
 # Translations for Nihongo (Japanese)
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
+# BGN: Date and Time Formats
+  [datetimelongtzd]
+    other = "2006年1月2日 15時04分05秒 -0700"
+  [datetimelongtzn]
+    other = "2006年1月2日 15時04分05秒 MST"
+  [datetimetzd]
+    other = "2006年1月2日 15時04分 -0700"
+  [datetimetzn]
+    other = "2006年1月2日 15時04分 MST"
+  [date]
+    other = "2006年1月2日"
+  [timelongtzd]
+    other = "15時04分05秒 -0700"
+  [timelongtzn]
+    other = "15時04分05秒 MST"
+  [timetzd]
+    other = "15時04分 -0700"
+  [timetzn]
+    other = "15時04分 MST"
+# END: Date and Time Formats
+
 # BGN: YourOnly.One: Global
   [home]
     other = "ホーム"
@@ -17,15 +38,15 @@
   [recentposts]
     other = "最近の投稿"
   [allChannels]
-    other = "すべてのチャンネル"
+    other = "チャンネル一覧"
   [allCategories]
-    other = "カテゴリー一覧"
+    other = "カテゴリ一覧"
   [allTags]
     other = "タグ一覧"
   [allSeries]
-    other = "全シリーズ"
+    other = "全シリーズ一覧"
   [allPosts]
-    other = "すべての投稿"
+    other = "すべての投稿一覧"
   [channel]
     one = "1チャンネル"
     other = "{{ .Count }}チャンネル"
@@ -33,26 +54,28 @@
     one = "1チャンネル"
     other = "{{ .Count }}チャンネル"
   [category]
-    one = "1 カテゴリー"
-    other = "{{ .Count }} カテゴリー"
+    one = "1種別"
+    other = "{{ .Count }}種別"
   [categories]
-    one = "1 カテゴリー"
-    other = "{{ .Count }} カテゴリー"
+    one = "1種別"
+    other = "{{ .Count }}種別"
   [tag]
-    one = "1 タグ"
-    other = "{{ .Count }} タグ"
+    one = "1ラベル"
+    other = "{{ .Count }}ラベル"
   [tags]
-    one = "1 タグ"
-    other = "{{ .Count }} タグ"
+    one = "1ラベル"
+    other = "{{ .Count }}ラベル"
+  [readtime]
+    other = "読むのに{{ .Count }}分"
   [series]
-    one = "1シリーズ"
-    other = "{{ .Count }}シリーズ"
+    one = "1連続"
+    other = "{{ .Count }}連続"
   [post]
-    one = "1件の投稿"
-    other = "{{ .Count }}件の投稿"
+    one = "1記事"
+    other = "{{ .Count }}記事"
   [posts]
-    one = "1件の投稿"
-    other = "{{ .Count }}件の投稿"
+    one = "1記事"
+    other = "{{ .Count }}記事"
   [postby]
     other = "によって書かれた"
   [readmore]
@@ -187,107 +210,3 @@
   [whatsapp]
     other = "WhatsApp"
 # END: Social services
-
-# BGN: Channels
-  [confidentraveler]
-    other = "自信のある旅行者"
-  [faithfulathlete]
-    other = "忠実なアスリート"
-  [loverelationship]
-    other = "愛と関係"
-  [snoworld]
-    other = "雪の世界"
-  [techmagus]
-    other ="ハイテク マギ"
-  [versesspace]
-    other = "Verses.Space"
-  [waybelievers]
-    other = "信者の道"
-  [yookichronicles]
-    other = "YOOkiクロニクル"
-  [yugenbard]
-    other = "幽玄吟遊詩人"
-# END: Channels
-
-# BGN: Series
-  [26virtual]
-    other = "26virtual"
-  [pray]
-    other = "祈る"
-  [torah]
-    other = "聖書"
-  [truename]
-    other = "本当の名前"
-# END: Series
-
-# BGN: Categories
-  [appointedtimes]
-    other = "決められた時間"
-  [discourse]
-    other = "談話"
-  [films]
-    other = "映画"
-  [howto]
-    other = "方法"
-  [life]
-    other = "人生"
-  [literature]
-    other = "文学"
-  [love]
-    other = "愛"
-  [music]
-    other = "音楽"
-  [opinion]
-    other = "意見"
-  [photography]
-    other = "写真撮影"
-  [sports]
-    other = "スポーツ"
-  [tv]
-    other = "テレビ"
-# END: Categories
-
-# BGN: Tags
-  [adaptations]
-    other = "適応"
-  [ccbysa]
-    other = "クリエイティブ・コモンズ 表示 - 継承 ライセンス"
-  [fanfiction]
-    other = "ファンフィクション"
-  [html]
-    other = "HTML"
-  [kdrama]
-    other = "韓国ドラマ"
-  [marriageproposals]
-    other = "結婚の申し込み"
-  [mathematics]
-    other = "数学"
-  [mobilephotography]
-    other = "モバイル写真"
-  [nature]
-    other = "自然"
-  [poems]
-    other = "詩"
-  [publicdomain]
-    other = "パブリックドメイン"
-  [quotes]
-    other = "引用"
-  [research]
-    other = "リサーチ"
-  [reviews]
-    other = "レビュー"
-  [running]
-    other = "ランニング"
-  [sabbath]
-    other = "安息日"
-  [traditions]
-    other = "伝統"
-  [toys]
-    other = "おもちゃ"
-  [trivia]
-    other = "トリビア"
-  [verses]
-    other = "詩"
-  [videos]
-    other = "ビデオ"
-# END: Tags
