@@ -20,8 +20,10 @@
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />
 {{- end }}
 
-{{- with .Params.metarobots }}
-  <meta name="robots" content="{{ . }}" />
+{{- if eq .Kind "taxonomy" }}
+  <meta name="robots" content="noindex" />
+{{ else if .Params.metarobots }}
+  <meta name="robots" content="{{ .Params.metarobots }}" />
 {{- end }}
 {{- with .Params.redirectto }}
   <meta http-equiv="refresh" content="0; url='{{ . | relLangURL }}'" />
@@ -48,10 +50,10 @@
 <!-- BGN: JSON-LD -->
   {{ partial "schemas/schema_Global.html" . }}
 <!-- END: JSON-LD -->
-{{- template "_internal/schema.html" . -}}
-{{- template "_internal/opengraph.html" . -}}
-{{- template "_internal/twitter_cards.html" . -}}
-{{- template "_internal/googletagmanager.html" . -}}
+{{ template "_internal/schema.html" . }}
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ template "_internal/googletagmanager.html" . }}
 
 {{ hugo.Generator }}
 
