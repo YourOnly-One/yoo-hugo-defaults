@@ -25,160 +25,15 @@ comments = true
 #math = true
 toc = true
 
+#videos = [""]                                                       # used by og:video, etc.
+#audio = [""]                                                        # used by og:audio, etc.
+images = [""]                                                       # used by og:images, etc.; first image is cover image
+
 draft = true
 
 #license = ""                                                       # only set if the post license is not the same as the site license
 
 #contenttypes = [""]                                                 # Semantic Web JSON-LD
-
-#videos = [""]                                                       # used by og:video, etc.
-#audio = [""]                                                        # used by og:audio, etc.
-images = [""]                                                       # used by og:images, etc.; first image is cover image
-
-# For /yuki/ choose one and remove everything else
-#[author]
-#  name = ""
-#  #email = ""
-#  homepage = ""
-#  avatar = ""
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Confident Traveler / 自信のある旅行者 / 자신감있는 여행자"
-#  #email = ""
-#  homepage = "https://im.youronly.one/confidentraveler/"
-#  avatar = "https://rsc.youronly.one/img/y/Confident_Traveler-logo-01-1500x.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Faithful Athlete / 忠実なアスリート / 충실한 운동 선수"
-#  #email = ""
-#  homepage = "https://im.youronly.one/faithfulathlete/"
-#  avatar = "https://rsc.youronly.one/img/y/Faithful_Athlete-logo-02-1500x.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Love and Relationship / 愛と関係 / 사랑과 관계"
-#  #email = ""
-#  homepage = "https://im.youronly.one/love/"
-#  avatar = "https://rsc.youronly.one/img/y/Love_and_Relationship.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Snoworld / 雪の世界 / 스노우 월드"
-#  #email = ""
-#  homepage = "https://im.youronly.one/snoworld/"
-#  avatar = "https://rsc.youronly.one/img/y/snoworld-square.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "techmagus / ハイテク マギ / 테크 마구스"
-#  #email = ""
-#  homepage = "https://im.youronly.one/techmagus/"
-#  avatar = "https://rsc.youronly.one/img/y/Architetto-—-Esperiment-chimico.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Verses.Space (KWWP)"
-#  #email = ""
-#  homepage = "https://verses.space"
-#  avatar = "https://rsc.youronly.one/img/y/KWWP-logo-01-1280wh-transparent.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Way of Believers / 信者の道 / 테크 마구스"
-#  #email = ""
-#  homepage = "https://im.youronly.one/way/"
-#  avatar = "https://img.youronly.one/works/FlagMenorah-Proto-(CC0).webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Health Welfareness / 健康福祉 / 건강 복지"
-#  #email = ""
-#  homepage = "https://health.youronly.one"
-#  avatar = "https://rsc.youronly.one/img/y/CHANGE_THIS.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Wealth Welfareness / 富と福祉 / 부 복지"
-#  #email = ""
-#  homepage = "https://wealth.youronly.one"
-#  avatar = "https://rsc.youronly.one/img/y/CHANGE_THIS.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
-#[author]
-#  name = "Yūgen Bard / 幽玄吟遊詩人 / 幽 玄 음유 시인"
-#  #email = ""
-#  homepage = "https://im.youronly.one/yugenbard/"
-#  avatar = "https://rsc.youronly.one/img/y/Yūgen_Bard-logo-01-1500x.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
-
 #[semweb]                                                            # Semantic Web JSON-LD
 #  type = ""
 
@@ -200,6 +55,150 @@ images = [""]                                                       # used by og
 #  copyrightyear = "2018"
 #  licenseurl = "https://creativecommons.org/licenses/by-sa/4.0/"
 #  acquirelicenseurl = "https://youronly.one/p/legal-notice/"
+
+# For /yuki/ choose one and remove everything else
+#[author]
+#  #name = ""
+#  #email = ""
+#  homepage = ""
+#  avatar = ""
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Confident Traveler / 自信のある旅行者 / 자신감있는 여행자"
+#  #email = ""
+#  homepage = "https://im.youronly.one/confidentraveler/"
+#  avatar = "https://rsc.youronly.one/img/y/Confident_Traveler-logo-01-1500x.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Faithful Athlete / 忠実なアスリート / 충실한 운동 선수"
+#  #email = ""
+#  homepage = "https://im.youronly.one/faithfulathlete/"
+#  avatar = "https://rsc.youronly.one/img/y/Faithful_Athlete-logo-02-1500x.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Love and Relationship / 愛と関係 / 사랑과 관계"
+#  #email = ""
+#  homepage = "https://im.youronly.one/love/"
+#  avatar = "https://rsc.youronly.one/img/y/Love_and_Relationship.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Snoworld / 雪の世界 / 스노우 월드"
+#  #email = ""
+#  homepage = "https://im.youronly.one/snoworld/"
+#  avatar = "https://rsc.youronly.one/img/y/snoworld-square.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "techmagus / ハイテク マギ / 테크 마구스"
+#  #email = ""
+#  homepage = "https://im.youronly.one/techmagus/"
+#  avatar = "https://rsc.youronly.one/img/y/techmagus-Architetto-Esperiment-chimico.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Verses.Space (KWWP)"
+#  #email = ""
+#  homepage = "https://verses.space"
+#  avatar = "https://rsc.youronly.one/img/y/KWWP-logo-01-1280wh-transparent.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Way of Believers / 信者の道 / 테크 마구스"
+#  #email = ""
+#  homepage = "https://im.youronly.one/way/"
+#  avatar = "https://img.youronly.one/works/FlagMenorah-Proto-(CC0).webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Health Welfareness / 健康福祉 / 건강 복지"
+#  #email = ""
+#  homepage = "https://health.youronly.one"
+#  avatar = "https://rsc.youronly.one/img/y/CHANGE_THIS.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Wealth Welfareness / 富と福祉 / 부 복지"
+#  #email = ""
+#  homepage = "https://wealth.youronly.one"
+#  avatar = "https://rsc.youronly.one/img/y/CHANGE_THIS.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
+#  #name = "Yūgen Bard / 幽玄吟遊詩人 / 幽 玄 음유 시인"
+#  #email = ""
+#  homepage = "https://im.youronly.one/yugenbard/"
+#  avatar = "https://rsc.youronly.one/img/y/Yūgen_Bard-logo-01-1500x.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
 +++
 
 SUMMARY
@@ -242,7 +241,7 @@ Test here.[^a]
 ## Other markdown codes
 [SOME_LINK](https://example.com)
 
-[LOCAL_LINK]({{< ref "/FILENAME.md" > "CUSTOM_NAME_OPTIONAL"}})
+[POST_TITLE]({{< ref "/FILENAME.md" >}} "TITLE_ATTRIBUTE")
 
 ## Official trailer / 公式予告編 / 공식 예고편
 {{< youtube id="CHANGE_THIS" title="「CHANGE_THIS」 trailer/予告編/예고편" >}}
