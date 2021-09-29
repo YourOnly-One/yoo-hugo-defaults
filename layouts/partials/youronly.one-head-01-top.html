@@ -2,32 +2,25 @@
 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'none'; child-src 'self' https:; connect-src 'self' https:; font-src 'self' data: https:; frame-src 'self' https:; img-src 'self' data: https:; manifest-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; worker-src 'self' https:; base-uri 'self'; form-action 'self' https:;" />
 {{ with .Params.relcanonical }}
   <link rel="canonical" href="{{ . | relLangURL }}" itemprop="url" />
-{{ else -}}
+{{ else }}
   <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
-{{ end -}}
+{{ end }}
 <meta name="referrer" content="strict-origin-when-cross-origin" />
 {{- /* <meta http-equiv="feature-policy" content="accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain *; encrypted-media 'self'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen *; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'self'; payment 'none'; picture-in-picture *; publickey-credentials 'self'; speaker 'self'; sync-xhr *; usb 'none'; wake-lock 'none'; xr-spatial-tracking 'none';" /> */ -}}
-
-{{- if .IsTranslated -}}
-  {{ range .AllTranslations }}
-    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
-  {{- end -}}
-  {{ range first 1 .AllTranslations }}
-    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-  {{- end -}}
+{{ if .IsTranslated }}
+  {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />{{ end }}
+  {{ range first 1 .AllTranslations }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
 {{ end }}
-{{- range .AlternativeOutputFormats }}
-  <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />
-{{- end }}
-
-{{- if eq .Kind "taxonomy" }}
+{{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />{{ end }}
+{{ if or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") }}
   <meta name="robots" content="noindex" />
 {{ else if .Params.metarobots }}
   <meta name="robots" content="{{ .Params.metarobots }}" />
-{{- end }}
-{{- with .Params.redirectto }}
-  <meta http-equiv="refresh" content="0; url='{{ . | relLangURL }}'" />
-{{- end }}
+{{ end }}
+{{ with .Params.redirectto }}<meta http-equiv="refresh" content="0; url='{{ . }}'" />{{ end }}
+<link rel="manifest" href="{{ .Site.BaseURL }}site.webmanifest">
+
+{{/* YourOnly.One: Everything above must be in that particular order, do NOT move. */}}
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -81,3 +74,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Music&family=Noto+Rashi+Hebrew:wght@400;700&family=Noto+Sans+Buhid&family=Noto+Sans+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Sans+HK:wght@400;700&family=Noto+Sans+Hanunoo&family=Noto+Sans+Hebrew:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+KR:wght@400;700&family=Noto+Sans+Math&family=Noto+Sans+Mono:wght@400;700&family=Noto+Sans+Phoenician&family=Noto+Sans+SC:wght@400;700&family=Noto+Sans+Symbols+2&family=Noto+Sans+Symbols:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Noto+Sans+Tagalog&family=Noto+Sans+Tagbanwa&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Display:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif+Hebrew:wght@400;700&family=Noto+Serif+JP:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Noto+Serif+SC:wght@400;700&family=Noto+Serif+TC:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
   </noscript>
 <!-- END: Google Fonts API v2 -->
+
+<meta name="DC.title" content="IM YourOnly.One 🔏" />
+<meta name="geo.region" content="PH-00" />
+<meta name="geo.placename" content="Manila" />
+<meta name="geo.position" content="14.599781;120.973935" />
+<meta name="ICBM" content="14.599781, 120.973935" />
