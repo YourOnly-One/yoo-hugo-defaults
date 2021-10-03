@@ -164,6 +164,12 @@
     other = "搭載"
   [themeby]
     other = "テーマ から"
+  [gift-didyoulikeit]
+    other = "気に入りましたか？ この投稿を共有し、下にコメントを残して、"
+  [gift-sendme]
+    other = "私に贈り物を送ってください"
+  [opensnewtab]
+    other = "（新しいタブ/ウィンドウで開きます）"
 # END: YourOnly.One: footer
 
 # BGN: Social services

@@ -164,6 +164,12 @@
     other = "Powered by"
   [themeby]
     other = "theme by"
+  [gift-didyoulikeit]
+    other = "Did you like it? Do share this post, leave a comment below, and"
+  [gift-sendme]
+    other = "send me a gift"
+  [opensnewtab]
+    other = "(opens in a new tab/window)"
 # END: YourOnly.One: footer
 
 # BGN: Social services
