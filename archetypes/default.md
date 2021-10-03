@@ -71,6 +71,19 @@ draft = true
 #  #rel = "me noopener"
 
 #[author]
+#  #name = "YOOki Chronicles / YOOkiクロニクル / YOOki 연대기"
+#  #email = ""
+#  homepage = "https://im.youronly.one/yuki/"
+#  avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
+#  #emoji = ""
+#  #descriptionshort = ""
+#  #descriptionlong = ""
+#  #motto = ""
+#  #locationorigin = ""
+#  #locationcurrent = ""
+#  #rel = "me noopener"
+
+#[author]
 #  #name = "Confident Traveler / 自信のある旅行者 / 자신감있는 여행자"
 #  #email = ""
 #  homepage = "https://im.youronly.one/confidentraveler/"
