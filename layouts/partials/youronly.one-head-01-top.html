@@ -12,7 +12,7 @@
   {{ range first 1 .AllTranslations }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
 {{ end }}
 {{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />{{ end }}
-{{ if or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") }}
+{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
   <meta name="robots" content="noindex" />
 {{ else if .Params.metarobots }}
   <meta name="robots" content="{{ .Params.metarobots }}" />
