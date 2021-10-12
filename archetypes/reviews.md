@@ -13,10 +13,10 @@ relCanonical = ""                                                   # the actual
 #disqus_identifier = ""                                             # highly recommended by Disqus; automatic in YourOnly.One setup
 
 channels = [""]
-categories = [""]                                                   # taxonomy
-keywords = [""]                                                     # meta keywords
-series = [""]                                                       # subset of series taxonomy
-tags = [""]                                                         # taxonomy
+#categories = [""]                                                   # taxonomy
+#keywords = [""]                                                     # meta keywords
+#series = [""]                                                       # subset of series taxonomy
+#tags = [""]                                                         # taxonomy
 
 comments = true
 #weight = ""                                                        # post weight, if we want granular control of post order
@@ -28,6 +28,8 @@ toc = true
 #videos = [""]                                                       # used by og:video, etc.
 #audio = [""]                                                        # used by og:audio, etc.
 images = [""]                                                       # used by og:images, etc.; first image is cover image
+
+type = "review"                                                           # article, sitepage, review
 
 draft = true
 
