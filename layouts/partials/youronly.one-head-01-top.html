@@ -1,29 +1,23 @@
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'none'; child-src 'self' https:; connect-src 'self' https:; font-src 'self' data: https:; frame-src 'self' https:; img-src 'self' data: https:; manifest-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; worker-src 'self' https:; base-uri 'self'; form-action 'self' https:;" />
-{{ with .Params.relcanonical }}
-  <link rel="canonical" href="{{ . | relLangURL }}" itemprop="url" />
-{{ else }}
-  <link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+{{ if not .Site.IsServer }}
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'none'; child-src 'self' https:; connect-src 'self' https:; font-src 'self' data: https:; frame-src 'self' https:; img-src 'self' data: https:; manifest-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; worker-src 'self' https:; base-uri 'self'; form-action 'self' https:;" />
 {{ end }}
+<link rel="canonical" href="{{ with .Params.relcanonical }}{{ . | relLangURL }}{{ else }}{{ .Permalink }}{{ end }}" itempropr="url" />
 <meta name="referrer" content="strict-origin-when-cross-origin" />
-{{- /* <meta http-equiv="feature-policy" content="accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; battery 'none'; camera 'none'; display-capture 'none'; document-domain *; encrypted-media 'self'; execution-while-not-rendered 'none'; execution-while-out-of-viewport 'none'; fullscreen *; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'self'; payment 'none'; picture-in-picture *; publickey-credentials 'self'; speaker 'self'; sync-xhr *; usb 'none'; wake-lock 'none'; xr-spatial-tracking 'none';" /> */ -}}
-{{ if .IsTranslated }}
-  {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />{{ end }}
-  {{ range first 1 .AllTranslations }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
-{{ end }}
-{{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />{{ end }}
-{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
-  <meta name="robots" content="noindex" />
-{{ else if .Params.metarobots }}
-  <meta name="robots" content="{{ .Params.metarobots }}" />
-{{ end }}
+{{- /* BGN: Translations */ -}}
+  {{ if .IsTranslated }}
+    {{ range .AllTranslations }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />{{ end }}
+    {{ range first 1 .AllTranslations }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
+  {{ end }}
+  {{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />{{ end }}
+{{- /* END: Translations */ -}}
+<meta name="robots" content="{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}noindex{{ else if .Params.metarobots }}{{ .Params.metarobots }}{{ else }}index{{ end }}, follow" />
 {{ with .Params.redirectto }}<meta http-equiv="refresh" content="0; url='{{ . }}'" />{{ end }}
-<link rel="manifest" href="{{ .Site.BaseURL }}site.webmanifest">
-
-{{/* YourOnly.One: Everything above must be in that particular order, do NOT move. */}}
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+<meta name="author" content="{{ $.Param "author.name" }}" />
+<meta name="description" content="{{ if in .Site.Params.mainTypes .Type }}{{ .Summary | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+<meta name="keywords" content="{{ with or ($.Param "keywords") ($.Param "tags") }}{{ delimit . ", " }}{{ end }}" />
+<meta name="created" content="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">
+<meta name="modified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-0700" }}">
 {{ partial "schemas/schema_Global.html" . }}
 {{ template "_internal/schema.html" . }}
 {{ template "_internal/opengraph.html" . }}
@@ -31,12 +25,20 @@
 {{ with .Site.Social.twitter_creator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
 {{ with .Site.Social.twitter_domain }}<meta name="twitter:domain" content="{{ . }}">{{ end }}
 {{ with .Site.Social.twitter_site }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+<link rel="manifest" href="{{ .Site.BaseURL }}site.webmanifest">
+{{ if site.IsServer }}
+  <meta http-equiv="cache-control" content="no-cache">
+{{ end }}
+
+{{/* YourOnly.One: Everything above must be in that particular order, do NOT move. */}}
 
 {{ with .Site.Params.verify.flattr }}<meta name="flattr:id" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.verify.naver }}<meta name="naver-site-verification" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.verify.wot }}<meta name="wot-verification" content="{{ . }}" />{{ end }}
 
 {{ hugo.Generator }}
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 {{/* See: https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch */}}
 <!-- BGN: preconnect and dns-prefetch -->
