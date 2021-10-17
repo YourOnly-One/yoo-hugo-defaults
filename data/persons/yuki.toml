@@ -1,0 +1,163 @@
+id = "https://iam.youronly.one/#yuki"																														# format: URL/#fragment-identifier; should point to the Person's about/bio page
+name = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"																													# required
+additionalname = ["Yahuhanan Yukia Sese Cuneta", "Yuki"]																								# optional
+description = "Yuki loves writing, from content to world building. He is also in web development and is managing his own websites."																									# required
+mainentityofpage = "https://iam.youronly.one/"																							# format: URL/; should point to the Person's about/bio page
+url = "https://iam.youronly.one/"																													# required
+sameas = ["https://im.youronly.one/yuki/", "https://fb.com/2308171266072912/", "https://fb.me/jcsesecuneta/"]																											# optional (template)
+#affiliation = [""]																								# format: URL/#fragment-identifier; optional
+nationality = "Philippines"																									# format: COUNTRY name; optional
+role = "founder"																													# role in present Organization
+
+avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
+emoji = "❄️"
+motto = "If this is not the end of oblivion, then I shall live everyday as if my life were to end on this very day."
+
+rel = "me noopener"
+#rel = "noopener external nofollow"
+
+[[image]]
+	id = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.jpg"																														# format: URL/
+	caption = "JC John Sese Cuneta"																											# required
+	url = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.jpg"																													# required
+	photo = true																											# default: false; set to true if the Person's primary photo
+
+[[image]]
+	id = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.webp"																														# format: URL/
+	caption = "JC John Sese Cuneta"																											# required
+	url = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.webp"																													# required
+	photo = true																											# default: false; set to true if the Person's primary photo
+
+[[affiliation]]
+	id = "https://yelosan.youronly.one/#organization"																														# format: URL/#fragment-identifier; should point to the Org's semweb ID; if there isn't one, just follow the format
+	#name = ""																													# optional if ID is pointing to the Org's semweb ID
+	#url = ""																													# optional
+
+[[worksfor]]
+	id = "https://yelosan.youronly.one/#organization"																														# format: URL/#fragment-identifier; should point to the Org's semweb ID; if there isn't one, just follow the format 
+	#name = ""																													# optional if ID is pointing to the Org's semweb ID
+	#url = ""																													# optional
+
+### BGN: Wishlist ###
+	[[author.gift]]
+		name = "Amazon"
+		code = ""
+		url = "https://www.amazon.com/hz/wishlist/ls/1YHYZNMDYDDB6/ref=nav_wishlist_lists_1?_encoding=UTF8&type=wishlist"
+		linktitle = "Wishlist"
+		tag = ""
+		message = "I love to read. A review is guaranteed for the book you will send as a gift."
+		type = "wishlist"
+	[[author.gift]]
+		name = "Steam"
+		code = ""
+		url = "https://store.steampowered.com/wishlist/profiles/76561197997196684/#sort=order&discount_any=1"
+		linktitle = "Wishlist"
+		tag = ""
+		message = ""
+		type = "wishlist"
+### END: Wishlist ###
+
+### BGN: Affiliate codes ###
+	[[author.gift]]
+		name = "Amazon"
+		code = "youronlyone-20"
+		url = "https://www.amazon.com?&_encoding=UTF8&tag=youronlyone-20&linkCode=ur2&linkId=387918b08ede21983ce5efc57f10361f&camp=1789&creative=9325"
+		linktitle = "youronlyone-20"
+		tag = ""
+		message = ""
+		type = "affiliate"
+### END: Affiliate codes ###
+
+### BGN: Tip Jar ###
+	#[[author.gift]]
+	#  name = "Coins.ph"
+	#  code = ""
+	#  url = ""
+	#  linktitle = ""
+	#  tag = ""
+	#  message = ""
+	#  type = "tip jar"
+	[[author.gift]]
+		name = "Flattr"
+		code = ""
+		url = "https://flattr.com/@YourOnlyOne"
+		linktitle = "@YourOnlyOne"
+		tag = ""
+		message = ""
+		type = "tip jar"
+	#[[author.gift]]
+	#  name = "GCash"
+	#  code = ""
+	#  url = ""
+	#  linktitle = ""
+	#  tag = ""
+	#  message = ""
+	#  type = "tip jar"
+	[[author.gift]]
+		name = "PayPal"
+		code = ""
+		url = "https://paypal.me/yukino"
+		linktitle = ""
+		tag = ""
+		message = ""
+		type = "tip jar"
+### END: Tip Jar ###
+
+### BGN: Cryptocurrency ###
+	[[author.gift]]
+		name = "XLM (Stellar)"
+		code = "yukino*keybase.io"
+		url = ""
+		linktitle = ""
+		tag = "gift for https://youronly.one"
+		message = ""
+		type = "cryptocurrency"
+	[[author.gift]]
+		name = "USDC (Stellar)"
+		code = "yukino*keybase.io"
+		url = ""
+		linktitle = ""
+		tag = "gift for https://youronly.one"
+		message = ""
+		type = "cryptocurrency"
+	[[author.gift]]
+		name = "XRP (XRPL)"
+		code = "rU2mEJSLqBRkYLVTv55rFTgQajkLTnT6mA"
+		url = ""
+		linktitle = ""
+		tag = "246013"
+		message = ""
+		type = "cryptocurrency"
+	[[author.gift]]
+		name = "ETH (ERC-20)"
+		code = "0x739d2aae2a5b7a4e1d64c58d121c9d908d706c83"
+		url = ""
+		linktitle = ""
+		tag = ""
+		message = ""
+		type = "cryptocurrency"
+	[[author.gift]]
+		name = "USDC (ERC-20)"
+		code = "0x739d2aae2a5b7a4e1d64c58d121c9d908d706c83"
+		url = ""
+		linktitle = ""
+		tag = ""
+		message = ""
+		type = "cryptocurrency"
+	[[author.gift]]
+		name = "XBT (Bitcoin)"
+		code = "32w1De4wvr5jEzC4g5P4rkjvqg2bvMR8Vk"
+		url = ""
+		linktitle = ""
+		tag = ""
+		message = ""
+		type = "cryptocurrency"
+	[[author.gift]]
+		name = "BCH (BCHN)"
+		code = "pp8fkmchlu6a7c53a2s682jd70mncrzemsthca6ftl"
+		url = ""
+		linktitle = ""
+		tag = ""
+		message = ""
+		type = "cryptocurrency"
+### END: Cryptocurrency ###

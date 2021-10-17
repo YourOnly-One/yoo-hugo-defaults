@@ -1,0 +1,24 @@
+id = "https://yelosan.youronly.one/#organization"																														# format: URL/#fragment-identifier
+name = "Yelosan Publishing"																													# required
+legalname = "Yelosan Publishing"																										# required
+description = "We specialise in content creation and web development."																									# required
+url = "https://youronly.one/"																													# required (Google)
+sameas = ["https://fb.com/101597304949708/", "https://fb.me/yelosanpub/"]																											# optional (template)
+foundingdate = "2020"																									# optional; YYYY-MM-DD
+
+[[image]]
+  id = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.png"																														# format: URL/
+  caption = "Logo"																											# required
+  url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.png"																													# required
+  logo = true																											# set to true if organization logo
+
+[[image]]
+  id = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"																														# format: URL/#fragment-identifier
+  caption = "Logo"																											# required
+  url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"																													# required
+  logo = true																											# set to true if organization logo
+
+[[founder]]
+  id = "https://iam.youronly.one/#yuki"																														# format: URL/#fragment-identifier
+  #name = ""																													# optional if ID is pointing to Person-type
+  #url = ""																													# optional
