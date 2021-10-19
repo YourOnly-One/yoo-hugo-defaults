@@ -1,5 +1,5 @@
 id = "https://iam.youronly.one/#yuki"																														# required; format: URL/#fragment-identifier
-additionalName = ["Yahuhanan Yukia Sese Cuneta", "Yuki"]																							# optional
+additionalName = ["Yahuhanan Yukia Sese Cuneta", "Yuki", "雪亮", "ᜌᜓᜃᜒ"]																							# optional
 #email = ""																												# optional
 jobTitle = "Founder"																											# optional
 knowsLanguage = ["en-PH", "tl", "fil", "tl-Tglg", "fil-Tglg", "en"]																							# optional; use lang codes based on IETF BCP 47 standard
@@ -8,8 +8,8 @@ nationality = "Philippines"																									# optional; format: COUNTRY 
 #vatID = ""																												# optional
 description = "Yuki loves writing, from content to world building. He is also in web development and is managing his own websites."																									# required
 mainEntityOfPage = "https://iam.youronly.one/"																							# optional; format: URL/; should point to the Person's about/bio page
-name = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"																													# required
-sameAs = ["https://im.youronly.one/yuki/", "https://fb.com/2308171266072912/", "https://fb.me/jcsesecuneta/"]																											# optional
+name = "JC John Sese Cuneta"																													# required
+sameAs = ["https://keybase.io/yukino/", "https://iam.youronly.one/", "https://fb.com/2308171266072912/", "https://fb.me/jcsesecuneta/"]																											# optional
 url = "https://iam.youronly.one/"																													# required; format: URL/
 
 # BGN: Other params
