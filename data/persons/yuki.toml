@@ -1,42 +1,122 @@
-id = "https://iam.youronly.one/#yuki"																														# format: URL/#fragment-identifier; should point to the Person's about/bio page
-name = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"																													# required
-additionalname = ["Yahuhanan Yukia Sese Cuneta", "Yuki"]																								# optional
+id = "https://iam.youronly.one/#yuki"																														# required; format: URL/#fragment-identifier
+additionalName = ["Yahuhanan Yukia Sese Cuneta", "Yuki"]																							# optional
+#email = ""																												# optional
+jobTitle = "Founder"																											# optional
+knowsLanguage = ["en-PH", "tl", "fil", "tl-Tglg", "fil-Tglg", "en"]																							# optional; use lang codes based on IETF BCP 47 standard
+nationality = "Philippines"																									# optional; format: COUNTRY name
+#taxID = ""																												# optional
+#vatID = ""																												# optional
 description = "Yuki loves writing, from content to world building. He is also in web development and is managing his own websites."																									# required
-mainentityofpage = "https://iam.youronly.one/"																							# format: URL/; should point to the Person's about/bio page
-url = "https://iam.youronly.one/"																													# required
-sameas = ["https://im.youronly.one/yuki/", "https://fb.com/2308171266072912/", "https://fb.me/jcsesecuneta/"]																											# optional (template)
-#affiliation = [""]																								# format: URL/#fragment-identifier; optional
-nationality = "Philippines"																									# format: COUNTRY name; optional
-role = "founder"																													# role in present Organization
+mainEntityOfPage = "https://iam.youronly.one/"																							# optional; format: URL/; should point to the Person's about/bio page
+name = "ᜌᜓᜃᜒ (Yuki ・ 雪亮)"																													# required
+sameAs = ["https://im.youronly.one/yuki/", "https://fb.com/2308171266072912/", "https://fb.me/jcsesecuneta/"]																											# optional
+url = "https://iam.youronly.one/"																													# required; format: URL/
 
-avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
-emoji = "❄️"
-motto = "If this is not the end of oblivion, then I shall live everyday as if my life were to end on this very day."
+# BGN: Other params
+	avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
+	emoji = "❄️"
+	motto = "If this is not the end of oblivion, then I shall live everyday as if my life were to end on this very day."
 
-rel = "me noopener"
-#rel = "noopener external nofollow"
+	rel = "me noopener"
+	#rel = "noopener external nofollow"
+# END: Other params
 
-[[image]]
-	id = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.jpg"																														# format: URL/
-	caption = "JC John Sese Cuneta"																											# required
-	url = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.jpg"																													# required
-	photo = true																											# default: false; set to true if the Person's primary photo
+# spouse: optional
+#[spouse]
+#  id = ""																													# required; format: URL/#fragment-identifier
+#  #name = ""																												# optional if ID is pointing to the Person's semweb ID
+#  #url = ""																												# optional
 
-[[image]]
-	id = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.webp"																														# format: URL/
-	caption = "JC John Sese Cuneta"																											# required
-	url = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.webp"																													# required
-	photo = true																											# default: false; set to true if the Person's primary photo
-
+# affiliation: optional
 [[affiliation]]
-	id = "https://yelosan.youronly.one/#organization"																														# format: URL/#fragment-identifier; should point to the Org's semweb ID; if there isn't one, just follow the format
-	#name = ""																													# optional if ID is pointing to the Org's semweb ID
-	#url = ""																													# optional
+	id = "https://yelosan.youronly.one/"																													# required; format: URL/; should point to the Org's semweb ID; or the primary website
+	#name = ""																												# optional if ID is pointing to the Org's semweb ID
+	#url = ""																												# optional
 
-[[worksfor]]
-	id = "https://yelosan.youronly.one/#organization"																														# format: URL/#fragment-identifier; should point to the Org's semweb ID; if there isn't one, just follow the format 
-	#name = ""																													# optional if ID is pointing to the Org's semweb ID
-	#url = ""																													# optional
+# brand: optional
+[[brand]]
+	id = "https://im.youronly.one/love/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/Love_and_Relationship.webp"																												# optional
+	name = "Love and Relationship"																												# optional
+	url = "https://im.youronly.one/love/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/snoworld/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/snoworld-square.webp"																												# optional
+	name = "Snoworld"																												# optional
+	url = "https://im.youronly.one/snoworld/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/techmagus/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/techmagus-Architetto-Esperiment-chimico.webp"																												# optional
+	name = "techmagus"																												# optional
+	url = "https://im.youronly.one/techmagus/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/way/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/Way-Hanukkahns4.svg"																												# optional
+	name = "Way of Believers"																												# optional
+	url = "https://im.youronly.one/way/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/yuki/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/Yuki_flag-square-888x.webp"																												# optional
+	name = "YOOki Chronicles"																												# optional
+	url = "https://im.youronly.one/yuki/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/confidentraveler/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/Confident_Traveler-logo-01-1500x.webp"																												# optional
+	name = "Confident Traveler"																												# optional
+	url = "https://im.youronly.one/confidentraveler/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/faithfulathlete/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/Faithful_Athlete-logo-02-1500x.webp"																												# optional
+	name = "Faithful Athlete"																												# optional
+	url = "https://im.youronly.one/faithfulathlete/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/yugenbard/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/Yūgen_Bard-logo-01-1500x.webp"																												# optional
+	name = "Yūgen Bard"																												# optional
+	url = "https://im.youronly.one/yugenbard/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/"																													# required; format: URL/
+	logo = "https://rsc.youronly.one/img/y/Yuki_flag-square-888x.webp"																												# optional
+	name = "I'M YourOnly.One"																												# optional
+	url = "https://im.youronly.one/"																												# optional
+	isWebsite = true																								# optional; uncomment if Brand is also a Website
+
+# worksfor: optional
+[[worksFor]]
+	id = "https://yelosan.youronly.one/"																													# required; format: URL/; should point to the Org's semweb ID; or the primary website
+	#name = ""																												# optional if ID is pointing to the Org's semweb ID
+	#url = ""																												# optional
+
+# image: required
+[[image]]
+	caption = "Yahuhanan Yukia Sese Cuneta"																										# recommended (Google)
+	url = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.jpg"																												# required
+	isPhoto = true																									# required; default: false; set to true if Person's photo
+[[image]]
+	caption = "Yahuhanan Yukia Sese Cuneta"																										# recommended (Google)
+	url = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.webp"																												# required
+	isPhoto = true																									# required; default: false; set to true if Person's photo
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### BGN: Wishlist ###
 	[[author.gift]]

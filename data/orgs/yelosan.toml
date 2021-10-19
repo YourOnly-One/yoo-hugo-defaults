@@ -1,24 +1,84 @@
-id = "https://yelosan.youronly.one/#organization"																														# format: URL/#fragment-identifier
-name = "Yelosan Publishing"																													# required
-legalname = "Yelosan Publishing"																										# required
+id = "https://yelosan.youronly.one/"																														# required; format: URL/
+foundingDate = "2020-06-02"																									# optional; YYYY-MM-DD
+legalName = "Yelosan Publishing"																										# required
+#slogan = ""																												# optional
+#taxID = ""																												# optional
+#vatID = ""																												# optional
+alternateName = ["Yelosan"]																							# optional
 description = "We specialise in content creation and web development."																									# required
-url = "https://youronly.one/"																													# required (Google)
-sameas = ["https://fb.com/101597304949708/", "https://fb.me/yelosanpub/"]																											# optional (template)
-foundingdate = "2020"																									# optional; YYYY-MM-DD
+name = "Yelosan Publishing"																													# required
+sameAs = ["https://fb.com/101597304949708/", "https://fb.me/yelosanpub/"]																											# optional
+url = "https://yelosan.youronly.one/"																													# required (Google); format: URL/
 
-[[image]]
-  id = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.png"																														# format: URL/
-  caption = "Logo"																											# required
-  url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.png"																													# required
-  logo = true																											# set to true if organization logo
+# brand: optional
+[[brand]]
+	id = "https://im.youronly.one/love/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/snoworld/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/techmagus/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/way/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/yuki/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/confidentraveler/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/faithfulathlete/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/yugenbard/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+[[brand]]
+	id = "https://im.youronly.one/"																													# required; format: URL/
+	#logo = ""																												# optional
+	#name = ""																												# optional
+	#url = ""																												# optional
+	#isWebsite = true																								# optional; uncomment if Brand is also a Website
 
-[[image]]
-  id = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"																														# format: URL/#fragment-identifier
-  caption = "Logo"																											# required
-  url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"																													# required
-  logo = true																											# set to true if organization logo
-
+# founder: optional
 [[founder]]
-  id = "https://iam.youronly.one/#yuki"																														# format: URL/#fragment-identifier
-  #name = ""																													# optional if ID is pointing to Person-type
-  #url = ""																													# optional
+	id = "https://iam.youronly.one/#yuki"																													# required; format: URL/#fragment-identifier
+	#name = ""																												# optional if ID is pointing to an existing Person-type
+	#sameas = [""]																										# optional
+	#url = ""																												# optional
+
+# image: required
+[[image]]
+	caption = "Logo"																										# recommended (Google)
+	url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.png"																												# required; format: URL/
+	isLogo = true																									# required; default: false; set to true if Org's logo
+[[image]]
+	caption = "Logo"																										# recommended (Google)
+	url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"																												# required; format: URL/
+	isLogo = true																									# required; default: false; set to true if Org's logo
