@@ -23,9 +23,9 @@ url = "https://iam.youronly.one/"																													# required; format
 
 # spouse: optional
 #[spouse]
-#  id = ""																													# required; format: URL/#fragment-identifier
-#  #name = ""																												# optional if ID is pointing to the Person's semweb ID
-#  #url = ""																												# optional
+#	id = ""																													# required; format: URL/#fragment-identifier
+#	#name = ""																												# optional if ID is pointing to the Person's semweb ID
+#	#url = ""																												# optional
 
 # affiliation: optional
 [[affiliation]]
@@ -104,19 +104,6 @@ url = "https://iam.youronly.one/"																													# required; format
 	caption = "Yahuhanan Yukia Sese Cuneta"																										# recommended (Google)
 	url = "https://rsc.youronly.one/img/y/Yuki-formal-bnw-600x.webp"																												# required
 	isPhoto = true																									# required; default: false; set to true if Person's photo
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ### BGN: Wishlist ###
 	[[author.gift]]
