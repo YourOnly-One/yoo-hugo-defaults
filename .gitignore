@@ -18,3 +18,7 @@
 .DS_Store
 thumbs.db
 desktop.ini
+
+# Dev test files
+data/orgs/orgtest.toml
+data/persons/persontest.toml
