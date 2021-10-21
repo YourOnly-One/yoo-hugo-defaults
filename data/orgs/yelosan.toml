@@ -1,13 +1,13 @@
 id = "https://yelosan.youronly.one/"																														# required; format: URL/
-foundingDate = "2020-06-02"																									# optional; YYYY-MM-DD
-legalName = "Yelosan Publishing"																										# required
+foundingdate = "2020-06-02"																									# optional; YYYY-MM-DD
+legalname = "Yelosan Publishing"																										# required
 #slogan = ""																												# optional
-#taxID = ""																												# optional
-#vatID = ""																												# optional
-alternateName = ["Yelosan"]																							# optional
+#taxid = ""																												# optional
+#vatid = ""																												# optional
+alternatename = ["Yelosan"]																							# optional
 description = "We specialise in content creation and web development."																									# required
 name = "Yelosan Publishing"																													# required
-sameAs = ["https://fb.com/101597304949708/", "https://fb.me/yelosanpub/"]																											# optional
+sameas = ["https://fb.com/101597304949708/", "https://fb.me/yelosanpub/"]																											# optional
 url = "https://yelosan.youronly.one/"																													# required (Google); format: URL/
 
 # brand: optional
@@ -16,55 +16,55 @@ url = "https://yelosan.youronly.one/"																													# required (Go
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/snoworld/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/techmagus/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/way/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/yuki/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/confidentraveler/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/faithfulathlete/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/yugenbard/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 [[brand]]
 	id = "https://im.youronly.one/"																													# required; format: URL/
 	#logo = ""																												# optional
 	#name = ""																												# optional
 	#url = ""																												# optional
-	#isWebsite = true																								# optional; uncomment if Brand is also a Website
+	#iswebsite = true																								# optional; uncomment if Brand is also a Website
 
 # founder: optional
 [[founder]]
@@ -77,8 +77,8 @@ url = "https://yelosan.youronly.one/"																													# required (Go
 [[image]]
 	caption = "Logo"																										# recommended (Google)
 	url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.png"																												# required; format: URL/
-	isLogo = true																									# required; default: false; set to true if Org's logo
+	islogo = true																									# required; default: false; set to true if Org's logo
 [[image]]
 	caption = "Logo"																										# recommended (Google)
 	url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"																												# required; format: URL/
-	isLogo = true																									# required; default: false; set to true if Org's logo
+	islogo = true																									# required; default: false; set to true if Org's logo
