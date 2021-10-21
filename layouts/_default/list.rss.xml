@@ -65,14 +65,12 @@
           {{- .Summary | plainify -}}
         {{- end -}}
       </description>
-      <author>
-        {{- with $postAuthor.person -}}
-          {{ $author := index $authors . }}
-          {{ with ($postAuthor.email) | default $author.email }}{{ . }} ({{ end }}{{ with ($postAuthor.name) | default $author.name }}{{ . }}{{ end }}{{ with ($postAuthor.email) | default $author.email }}){{ end }}
-        {{- else -}}
-          {{ with $siteAuthor.email }}{{ . }} ({{ end }}{{ with $siteAuthor.name }}{{ . }}{{ end }}{{ with $siteAuthor.email }}){{ end }}
-        {{ end }}
-      </author>
+      {{- with $postAuthor.person -}}
+        {{ $author := index $authors . }}
+        {{ with ($postAuthor.email) | default $author.email }}<author>{{ . }}{{ with ($postAuthor.name) | default $author.name }} ({{ . }}){{ end }}</author>{{ end }}
+      {{- else -}}
+        {{ with $siteAuthor.email }}<author>{{ . }}{{ with $siteAuthor.name }} ({{ . }}){{ end }}</author>{{ end }}
+      {{ end }}
       {{- /* <category domain="">CATEGORY_NAME</category> */ -}}
       {{- /* <enclosure url="https://example.com/example.mp3" length="IN_BYTES" type="audio/mpeg" /> */}}
       <guid>{{ .Permalink }}</guid>
