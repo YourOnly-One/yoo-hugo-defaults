@@ -7,7 +7,7 @@
 {{- /* BGN: Translations */ -}}
   {{- if .IsTranslated }}
   {{ range .AllTranslations -}}
-  <link rel="alternate" hreflang="{{ .Language.Params.languagecodehtml }}" href="{{ .Permalink }}" />
+  <link rel="alternate" hreflang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" href="{{ .Permalink }}" />
   {{ end -}}
   {{ range first 1 .AllTranslations }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
   {{- end -}}
