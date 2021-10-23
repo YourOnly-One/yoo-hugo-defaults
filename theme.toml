@@ -3,7 +3,7 @@
 
 name = "YourOnly.One Hugo Defaults"
 license = "MIT"
-licenselink = "https://github.com/techmagus/youronlyone-hugo-defaults/blob/master/LICENSE"
+licenselink = "https://github.com/YourOnly-One/yoo-hugo-defaults/blob/master/LICENSE"
 description = "A collection of Hugo Defaults (partials, overrides, and other files) for and by YourOnly.One"
 
 # The home page of the theme, where the source can be found.
