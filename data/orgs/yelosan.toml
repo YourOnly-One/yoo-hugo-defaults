@@ -77,7 +77,7 @@ url = "https://yelosan.youronly.one/"
 [[images]]
 	caption = "Logo"
 	url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.png"
-	islogo = true
+	islogo = false
 [[images]]
 	caption = "Logo"
 	url = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
