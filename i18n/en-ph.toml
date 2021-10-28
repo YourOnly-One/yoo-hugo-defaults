@@ -86,15 +86,66 @@
     other = "Now Playing"
 # END: YourOnly.One: Global
 
+# BGN: attribution and license
+  [attribution_by]
+    other = "by"
+  [attribution_licensedunder]
+    other = "licensed under"
+  [attribution_cc0_extent]
+    other = "To the extent possible under law"
+  [attribution_cc0_waived]
+    other = "waived all copyright and related or neighbouring rights"
+  [attribution_cc0_publishedfrom]
+    other = "This work is published from"
+  [attribution_publicdomain]
+    other = "free of known copyright restrictions"
+  [attribution_allrightsreserved]
+    other = "The work shown above is Copyrighted"
+  [attribution_allrightsreservedcover]
+    other = "The cover image used in this article is Copyrighted"
+  [attribution_ccbysa4]
+    other = "Creative Commons Attribution-ShareAlike 4.0 International"
+  [attribution_directedby]
+    other = "Directed by"
+  [attribution_musicby]
+    other = "Music by"
+# END: attribution and license
+
 # BGN: YourOnly.One: attribution and license
   [quote_src]
     other = ","             # add a space before if using a word
 # END: YourOnly.One: attribution and license
 
+# BGN: generic words
+  [word_is]
+    other = "is"
+  [word_has]
+    other = "has"
+  [word_to]
+    other = "to"
+  [word_coverimage]
+    other = "・ Cover image:"
+  [word_date]
+    other = "Date"
+  [word_time]
+    other = "Time"
+  [word_location]
+    other = "Location"
+# END: generic words
+
 # BGN: YourOnly.One: generic words
   [word_countryname]
     other = "the Philippines"
 # END: YourOnly.One: generic words
+
+# BGN: punctuations
+  [punctuation_colon]
+    other = ":"
+  [punctuation_fullstop]
+    other = "."
+  [punctuation_pause]
+    other = ","
+# END: punctuations
 
 # BGN: YourOnly.One: footer
   [BestViewedInBGN]
