@@ -87,26 +87,20 @@
 # END: YourOnly.One: Global
 
 # BGN: YourOnly.One: attribution and license
-  [attribution_by]
-    other = "by"
-  [attribution_licensedunder]
-    other = "licensed under"
-  [attribution_cc0_extent]
-    other = "To the extent possible under law"
-  [attribution_cc0_waived]
-    other = "waived all copyright and related or neighbouring rights"
-  [attribution_cc0_publishedfrom]
-    other = "This work is published from"
-  [attribution_publicdomain]
-    other = "free of known copyright restrictions"
-  [attribution_allrightsreserved]
-    other = "This image and/or the work shown in the screengrab is Copyrighted"
-  [attribution_allrightsreservedcover]
-    other = "The cover image used in this article is Copyrighted"
-  [attribution_ccbysa4]
-    other = "Creative Commons Attribution-ShareAlike 4.0 International"
   [quote_src]
     other = ","             # add a space before if using a word
+# END: YourOnly.One: attribution and license
+
+# BGN: YourOnly.One: generic words
+  [word_countryname]
+    other = "the Philippines"
+# END: YourOnly.One: generic words
+
+# BGN: YourOnly.One: footer
+  [BestViewedInBGN]
+    other = "Best viewed in"
+  [BestViewedInEND]
+    other = "browsers."
   [copyleft]
     other = "Copyleft"
   [ContentOnBGN]
@@ -115,33 +109,6 @@
     other = "unless otherwise specified."
   [PermissionsBeyondScope]
     other = "Permissions beyond the scope of this license may be available at"
-# END: YourOnly.One: attribution and license
-
-# BGN: YourOnly.One: generic words
-  [word_is]
-    other = "is"
-  [word_has]
-    other = "has"
-  [word_to]
-    other = "to"
-  [word_coverimage]
-    other = "・ Cover image:"
-  [word_countryname]
-    other = "the Philippines"
-# END: YourOnly.One: generic words
-
-# BGN: YourOnly.One: punctuations
-  [punctuation_fullstop]
-    other = "."
-  [punctuation_pause]
-    other = ","
-# END: YourOnly.One: punctuations
-
-# BGN: YourOnly.One: footer
-  [BestViewedInBGN]
-    other = "Best viewed in"
-  [BestViewedInEND]
-    other = "browsers."
   [about]
     other = "About Us"
   [terms]

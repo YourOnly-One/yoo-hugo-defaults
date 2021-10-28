@@ -87,26 +87,20 @@
 # END: YourOnly.One: Global
 
 # BGN: YourOnly.One: attribution and license
-  [attribution_by]
-    other = "으로"
-  [attribution_licensedunder]
-    other = "라이센스"
-  [attribution_cc0_extent]
-    other = "법에 따라 가능한 한"
-  [attribution_cc0_waived]
-    other = "모든 저작권 및 관련 또는 이웃 권리를 포기했습니다"
-  [attribution_cc0_publishedfrom]
-    other = "이 작품은"
-  [attribution_publicdomain]
-    other = "알려진 저작권 제한 없음"
-  [attribution_allrightsreserved]
-    other = "이 이미지 및 / 또는 스크린 샷에 표시된 저작물은 저작권으로 보호됩니다"
-  [attribution_allrightsreservedcover]
-    other = "이 기사에 사용 된 표지 이미지는 저작권으로 보호됩니다"
-  [attribution_ccbysa4]
-    other = "크리에이티브 커먼즈 저작자표시-동일조건변경허락 4.0 국제 라이선스"
   [quote_src]
     other = ","             # add a space before if using a word
+# END: YourOnly.One: attribution and license
+
+# BGN: YourOnly.One: generic words
+  [word_countryname]
+    other = "필리핀"
+# END: YourOnly.One: generic words
+
+# BGN: YourOnly.One: footer
+  [BestViewedInBGN]
+    other = "베스트 뷰"
+  [BestViewedInEND]
+    other = "브라우저."
   [copyleft]
     other = "카피 레프트"
   [ContentOnBGN]
@@ -115,33 +109,6 @@
     other = "별도의 규정이없는."
   [PermissionsBeyondScope]
     other = "이 라이선스의 범위를 벗어난 권한은 다음에서 사용할 수 있습니다"
-# END: YourOnly.One: attribution and license
-
-# BGN: YourOnly.One: generic words
-  [word_is]
-    other = "이다"
-  [word_has]
-    other = "있다"
-  [word_to]
-    other = "에"
-  [word_coverimage]
-    other = "・ 표지 이미지 :"
-  [word_countryname]
-    other = "필리핀"
-# END: YourOnly.One: generic words
-
-# BGN: YourOnly.One: punctuations
-  [punctuation_fullstop]
-    other = "."
-  [punctuation_pause]
-    other = ","
-# END: YourOnly.One: punctuations
-
-# BGN: YourOnly.One: footer
-  [BestViewedInBGN]
-    other = "베스트 뷰"
-  [BestViewedInEND]
-    other = "브라우저."
   [about]
     other = "나에 대해서"
   [terms]
