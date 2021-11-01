@@ -18,7 +18,7 @@
 <meta name="robots" content="{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}noindex{{ else if .Params.metarobots }}{{ .Params.metarobots }}{{ else }}index{{ end }}, follow" />
 {{ with .Params.redirectto }}<meta http-equiv="refresh" content="0; url='{{ . }}'" />{{ end }}
 <meta name="author" content="{{ $.Param "author.name" }}" />
-<meta name="description" content="{{ if in .Site.Params.mainTypes .Type }}{{ .Summary | plainify }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+{{ with (.Param "description") }}<meta name="description" content="{{ . | plainify }}" />{{ end }}
 <meta name="keywords" content="{{ with or ($.Param "keywords") ($.Param "tags") }}{{ delimit . ", " }}{{ end }}" />
 <meta name="created" content="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">
 <meta name="modified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-0700" }}">
