@@ -270,6 +270,10 @@
 <meta name="msapplication-config" content="https://rsc.youronly.one/favicon/{{ $.Site.Params.subdir }}/browserconfig.xml?{{ $.Site.Params.faviconcache }}={{ $.Site.Params.faviconbuster }}">
 <meta name="theme-color" content="#ffffff">
 
+{{ $semwebcss := resources.Get "css/semweb-style.css" }}
+{{ $semwebstyle := $semwebcss | resources.Minify }}
+<link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="text/css" />
+
 <!-- BGN: YourOnly.One Head-03-Custom Theme -->
   {{- if templates.Exists "partials/youronly.one-head-03-custom-theme.html" -}}
     {{ partial "youronly.one-head-03-custom-theme.html" . }}
