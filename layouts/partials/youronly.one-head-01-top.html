@@ -22,6 +22,11 @@
 <meta name="keywords" content="{{ with or ($.Param "keywords") ($.Param "tags") }}{{ delimit . ", " }}{{ end }}" />
 <meta name="created" content="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">
 <meta name="modified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-0700" }}">
+<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05-0700" }}" />
+{{ range .Params.categories }}
+  <meta property="article:section" content="{{ . }}" />
+{{ end }}
+
 {{- /* YourOnly.One: No longer needed since we have SemWeb support {{ template "_internal/schema.html" . }} */ -}}
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
@@ -42,6 +47,7 @@
 {{ with .Site.Params.verify.flattr }}<meta name="flattr:id" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.verify.naver }}<meta name="naver-site-verification" content="{{ . }}" />{{ end }}
 {{ with .Site.Params.verify.wot }}<meta name="wot-verification" content="{{ . }}" />{{ end }}
+{{ with .Site.Params.verify.ocs }}<meta name="ocs-site-verification" content="{{ . }}" />{{ end }}
 
 {{ hugo.Generator }}
 
