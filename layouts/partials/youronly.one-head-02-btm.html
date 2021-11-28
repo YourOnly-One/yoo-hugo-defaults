@@ -1,8 +1,8 @@
-{{- with eq .Site.Params.jquerycdn true }}
+{{- with .Site.Params.jquerycdn }}
   <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
 {{- end -}}
 
-{{- with eq .Params.math true }}
+{{- with .Params.math }}
   <!-- BGN: MathJax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" crossorigin="anonymous"></script>
@@ -268,7 +268,7 @@
 <link rel="shortcut icon" href="https://rsc.youronly.one/favicon/{{ $.Site.Params.subdir }}/favicon.ico?{{ $.Site.Params.faviconcache }}={{ $.Site.Params.faviconbuster }}">
 <meta name="msapplication-TileColor" content="#603cba">
 <meta name="msapplication-config" content="https://rsc.youronly.one/favicon/{{ $.Site.Params.subdir }}/browserconfig.xml?{{ $.Site.Params.faviconcache }}={{ $.Site.Params.faviconbuster }}">
-<meta name="theme-color" content="#ffffff">
+<meta name="theme-color" content="{{ .Site.Params.themeColor | default "#ffffff" }}">
 
 {{ $semwebcss := resources.Get "css/semweb-style.css" }}
 {{ $semwebstyle := $semwebcss | resources.Minify }}
@@ -279,3 +279,7 @@
     {{ partial "youronly.one-head-03-custom-theme.html" . }}
   {{- end }}
 <!-- END: YourOnly.One Head-03-Custom Theme -->
+
+{{- with .Site.Params.googleadsense }}
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}" crossorigin="anonymous"></script>
+{{- end -}}
