@@ -39,15 +39,6 @@ contenttypes = ["CriticReview"]                                                 
 [semweb]                                                            # Semantic Web JSON-LD
   type = "Book, Movie, TVSeries"                                    # choose one
 
-# If different from our website
-#[semweb.publisher]
-#  name = ""
-#  sameas = [""]
-
-# If different from default author
-#[semweb.author]
-#  sameas = [""]
-
 # For adaptations
 #[semweb.product.isbasedon]
 #  name = ""
@@ -58,15 +49,6 @@ contenttypes = ["CriticReview"]                                                 
 #  name = ""
 #  alternatenames = [""]
 #  sameas = [""]
-
-# Video URLs can be any, YouTube provided as a guide only
-[semweb.video]
-  name = ""
-  description = "「CHANGE_THIS」 trailer/予告編/예고편"
-  uploaddate = ""
-  thumbnailurl = "https://img.youtube.com/vi/CHANGE_THIS/hqdefault.jpg"
-  contenturl = "https://www.youtube.com/watch?v=CHANGE_THIS"
-  embedurl = "https://www.youtube-nocookie.com/embed/CHANGE_THIS"
 
 [semweb.review]
   snippet = ""
@@ -113,161 +95,101 @@ contenttypes = ["CriticReview"]                                                 
   sameas = [""]
 
 # For /yuki/ choose one and remove everything else
-#[author]
-#  #name = ""
-#  #email = ""
-#  homepage = ""
+#[[authors]]
+#  person = ""
+#  #id = ""
+#  name = "ᜌᜓᜃᜒ (Yuki | 雪亮)"
+#  url = ""
 #  avatar = ""
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "YOOki Chronicles / YOOkiクロニクル / YOOki 연대기"
-#  #email = ""
-#  homepage = "https://im.youronly.one/yuki/"
+#  url = "https://im.youronly.one/yuki/"
 #  avatar = "https://rsc.youronly.one/img/y/Yuki_flag-square-300x.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Confident Traveler / 自信のある旅行者 / 자신감있는 여행자"
-#  #email = ""
-#  homepage = "https://im.youronly.one/confidentraveler/"
+#  url = "https://im.youronly.one/confidentraveler/"
 #  avatar = "https://rsc.youronly.one/img/y/Confident_Traveler-logo-01-1500x.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Faithful Athlete / 忠実なアスリート / 충실한 운동 선수"
-#  #email = ""
-#  homepage = "https://im.youronly.one/faithfulathlete/"
+#  url = "https://im.youronly.one/faithfulathlete/"
 #  avatar = "https://rsc.youronly.one/img/y/Faithful_Athlete-logo-02-1500x.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Love and Relationship / 愛と関係 / 사랑과 관계"
-#  #email = ""
-#  homepage = "https://im.youronly.one/love/"
+#  url = "https://im.youronly.one/love/"
 #  avatar = "https://rsc.youronly.one/img/y/Love_and_Relationship.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Snoworld / 雪の世界 / 스노우 월드"
-#  #email = ""
-#  homepage = "https://im.youronly.one/snoworld/"
+#  url = "https://im.youronly.one/snoworld/"
 #  avatar = "https://rsc.youronly.one/img/y/snoworld-square.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "techmagus / ハイテク マギ / 테크 마구스"
-#  #email = ""
-#  homepage = "https://im.youronly.one/techmagus/"
+#  url = "https://im.youronly.one/techmagus/"
 #  avatar = "https://rsc.youronly.one/img/y/techmagus-Architetto-Esperiment-chimico.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Verses.Space (KWWP)"
-#  #email = ""
-#  homepage = "https://verses.space"
+#  url = "https://verses.space"
 #  avatar = "https://rsc.youronly.one/img/y/KWWP-logo-01-1280wh-transparent.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Way of Believers / 信者の道 / 테크 마구스"
-#  #email = ""
-#  homepage = "https://im.youronly.one/way/"
+#  url = "https://im.youronly.one/way/"
 #  avatar = "https://img.youronly.one/works/FlagMenorah-Proto-(CC0).webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Health Welfareness / 健康福祉 / 건강 복지"
-#  #email = ""
-#  homepage = "https://health.youronly.one"
+#  url = "https://health.youronly.one"
 #  avatar = "https://rsc.youronly.one/img/y/CHANGE_THIS.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Wealth Welfareness / 富と福祉 / 부 복지"
-#  #email = ""
-#  homepage = "https://wealth.youronly.one"
+#  url = "https://wealth.youronly.one"
 #  avatar = "https://rsc.youronly.one/img/y/CHANGE_THIS.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 
-#[author]
+#[[authors]]
+#  person = "yuki"
+#  #id = ""
 #  #name = "Yūgen Bard / 幽玄吟遊詩人 / 幽 玄 음유 시인"
-#  #email = ""
-#  homepage = "https://im.youronly.one/yugenbard/"
+#  url = "https://im.youronly.one/yugenbard/"
 #  avatar = "https://rsc.youronly.one/img/y/Yūgen_Bard-logo-01-1500x.webp"
-#  #emoji = ""
-#  #descriptionshort = ""
-#  #descriptionlong = ""
-#  #motto = ""
-#  #locationorigin = ""
-#  #locationcurrent = ""
-#  #rel = "me noopener"
+#  #rel = "noopener external nofollow"
 +++
 
 SUMMARY
@@ -286,28 +208,53 @@ SUMMARY
 
 ## Image code
 {{< image
-  type="image"
+  height=""
+  width=""
+  class=""
+  style=""
+  type=""
 
-  imgheight=""
-  imgwidth=""
+  isrepresentativeofpage=false
 
-  imgsrc=""
-  imglink=""
-  imgrel="noopener external nofollow"
+  src=""
+  link=""
+  linkrel=""
+  thumbnailurl=""
 
-  imgtitle=""
-  imgcaption=""
-  imgalt=""
+  title=""
+  caption=""
+  alt=""
+  embeddedtextcaption=""
+  inlanguage=""
 
-  attribalign=""
+  datecreated=""
+  datepublished=""
+
+  objheight=""
+  objwidth=""
+
+  infoalign=""
 
   licensecode=""
   licenseurl=""
   licensename=""
 
+  acquirelicensepage=""
+  copyrightnotice=""
+  credittext=""
+
   attribto=""
-  attriblink=""
-  attribrel="noopener external nofollow"
+  attriburl=""
+  attribrel=""
+
+  cc0country=""
+  cc0countrycode=""
+  cc0countryurl=""
+
+  contentloc=""
+  contentlocurl=""
+  contentlocrel=""
+  contentreferencetime=""
 >}}
 
 ## Music / 音楽 / 음악
@@ -322,7 +269,58 @@ SUMMARY
 [POST_TITLE]({{< ref "/FILENAME.md" >}} "TITLE_ATTRIBUTE")
 
 ## Official trailer / 公式予告編 / 공식 예고편
-{{< youtube id="CHANGE_THIS" title="「CHANGE_THIS」 trailer/予告編/예고편" >}}
+{{< video
+  height=""
+  width=""
+  class=""
+  style=""
+  platform=""
+
+  id=""
+  linkrel=""
+  isplaylist=false
+  isloop=false
+  starttime=""
+  endtime=""
+
+  title=""
+  caption=""
+  inlanguage=""
+
+  datecreated=""
+  datepublished=""
+
+  director=""
+  musicby=""
+
+  objframesize=""
+  objquality=""
+  objheight=""
+  objwidth=""
+
+  infoalign=""
+
+  licensecode=""
+  licenseurl=""
+  licensename=""
+
+  acquirelicensepage=""
+  copyrightnotice=""
+  credittext=""
+
+  attribto=""
+  attriburl=""
+  attribrel=""
+
+  cc0country=""
+  cc0countrycode=""
+  cc0countryurl=""
+
+  contentloc=""
+  contentlocurl=""
+  contentlocrel=""
+  contentreferencetime=""
+>}}
 
 ## OST
 {{< music src="https://open.spotify.com/embed/playlist/CHANGE_THIS" >}}
@@ -335,19 +333,33 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
 {{< image
   type="imagecoverattrib"
 
-  imglink=""
-  imgrel="noopener external nofollow"
+  isrepresentativeofpage=false
 
-  imgtitle=""
-  imgcaption=""
+  link=""
+  linkrel=""
+  thumbnailurl=""
+
+  title=""
+  caption=""
+  alt=""
+  embeddedtextcaption=""
+  inlanguage=""
 
   licensecode=""
   licenseurl=""
   licensename=""
 
+  acquirelicensepage=""
+  copyrightnotice=""
+  credittext=""
+
   attribto=""
-  attriblink=""
-  attribrel="noopener external nofollow"
+  attriburl=""
+  attribrel=""
+
+  cc0country=""
+  cc0countrycode=""
+  cc0countryurl=""
 >}}
 
 -------
