@@ -25,9 +25,9 @@ comments = true
 #math = true
 toc = true
 
-#videos = [""]                                                       # used by og:video, etc.
 #audio = [""]                                                        # used by og:audio, etc.
 images = [""]                                                       # used by og:images, etc.; first image is cover image
+#videos = [""]                                                       # used by og:video, etc.
 
 type = "review"                                                           # article, sitepage, review
 
