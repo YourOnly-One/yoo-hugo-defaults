@@ -84,6 +84,10 @@
     other = "探す"
   [nowplaying]
     other = "再生中"
+  [bookmarks]
+    other = "ブックマーク"
+  [yukinetwork]
+    other = "雪亮（ゆきあ）ネットワーク"
 # END: YourOnly.One: Global
 
 # BGN: YourOnly.One: attribution and license

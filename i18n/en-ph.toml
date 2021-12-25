@@ -84,6 +84,10 @@
     other = "Search"
   [nowplaying]
     other = "Now Playing"
+  [bookmarks]
+    other = "Bookmarks"
+  [yukinetwork]
+    other = "Yuki network"
 # END: YourOnly.One: Global
 
 # BGN: attribution and license
