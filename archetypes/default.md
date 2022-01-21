@@ -3,7 +3,7 @@ title = ""
 description = ""                                                    # For Schema.org; OpenGraph; Twitter Cards; and post summary
 
 date = "{{ .Date }}"                                        # manually adjust to local timezone
-#lastmod = "2021-04-07T17:53:01"                                     # manually adjust to local timezone
+#lastmod = "2022-04-07T17:53:01"                                     # manually adjust to local timezone
 
 #aliases = [""]
 slug = ""
