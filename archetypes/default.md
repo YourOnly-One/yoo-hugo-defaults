@@ -200,6 +200,8 @@ Test here.[^a]
 
 [POST_TITLE]({{< ref "/FILENAME.md" >}} "TITLE_ATTRIBUTE")
 
+[POST_TITLE]({{< relref path="document.md" lang="ja" >}} "TITLE_ATTRIBUTE")
+
 ## Official trailer / 公式予告編 / 공식 예고편
 {{< video
   height=""
