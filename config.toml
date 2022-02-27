@@ -12,7 +12,7 @@
   #bitbucket = ""                                          #
   #deviantart = "laibcoms"                                         # URL-name
   #email = ""                                              # email address; leave empty
-  facebook = "YourOnly.One0"                                           # URL-name
+  facebook = "YourOnly.ONE.ofcl"                                           # URL-name
   facebook_admin = "532996690,100042645428366,2308171266072912"                                     # profile ID number and page admin to get domain insights
   facebook_appid = "183794425326191"                                     # app ID
   facebook_authorid = "2308171266072912"                                  #
@@ -32,10 +32,10 @@
   #stackoverflow = "306674"                                      # user number
   strava = "faithfulathlete"                                             # URL-name or userID number
   #telegram = ""                                           # username
-  twitter = "YourOnlyOne7"                                            # username; do not include @-at
+  twitter = "YourOnlyONEofcl"                                            # username; do not include @-at
   twitter_domain = "YourOnly.One"                                     # this domain shows in twitter cards as "View on `twitter_domain`"
-  twitter_creator = "@YourOnlyOne7"                                    # @username
-  twitter_site = "@YourOnlyOne7"                                       # @username
+  twitter_creator = "@YourOnlyONEofcl"                                    # @username
+  twitter_site = "@YourOnlyONEofcl"                                       # @username
   #wordpress = ""                                          #
   youtube = "YourOnlyOne7"                                            # URL-name
 
