@@ -198,6 +198,14 @@ SUMMARY
 
 > ***TAGLINE***
 
+{{% sembox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
+  content
+{{% /sembox %}}
+
+{{% quotebox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
+  content
+{{% /quotebox %}}
+
 ## Synopsis / 筋書き / 개요
 
 [^a]: SOURCE_NAME: [「PRODUCT_TITLE」 synopsis/筋書き/개요](LINK); [CC-BY-SA 3.0 Unported License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License)
