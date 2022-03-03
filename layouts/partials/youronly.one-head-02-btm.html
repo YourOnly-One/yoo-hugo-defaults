@@ -1,12 +1,12 @@
 {{- with .Site.Params.jquerycdn }}
-  <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js" crossorigin="anonymous"></script>
 {{- end -}}
 
 {{- with .Params.math }}
-  <!-- BGN: MathJax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" crossorigin="anonymous"></script>
-  <!-- END: MathJax -->
+	<!-- BGN: MathJax -->
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script>
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" crossorigin="anonymous"></script>
+	<!-- END: MathJax -->
 {{ end -}}
 
 <!-- BGN: Yuki -->
@@ -274,10 +274,31 @@
 {{ $semwebstyle := $semwebcss | resources.Minify }}
 <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="text/css" />
 
+<style>
+	/*
+	sup[id^="fnref"] > a.footnote-ref {
+		background-color: #c0ffee;
+		border-radius: 10px;
+		padding: 1px 5px;
+		font-size: 0.6rem;
+	}
+	*/
+	sup[id^="fnref"] > a.footnote-ref::before {
+		content: "[";
+	}
+	sup[id^="fnref"] > a.footnote-ref::after {
+		content: "]";
+	}
+	sup[id^="fnref"] > a.footnote-ref {
+		font-size: 0.7rem;
+		vertical-align: super;
+	}
+</style>
+
 <!-- BGN: YourOnly.One Head-03-Custom Theme -->
-  {{- if templates.Exists "partials/youronly.one-head-03-custom-theme.html" -}}
-    {{ partial "youronly.one-head-03-custom-theme.html" . }}
-  {{- end }}
+	{{- if templates.Exists "partials/youronly.one-head-03-custom-theme.html" -}}
+		{{ partial "youronly.one-head-03-custom-theme.html" . }}
+	{{- end }}
 <!-- END: YourOnly.One Head-03-Custom Theme -->
 
 {{- with .Site.Params.googleadsense }}
