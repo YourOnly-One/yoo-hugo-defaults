@@ -7,8 +7,8 @@ date = "{{ .Date }}"                                        # manually adjust to
 
 #aliases = [""]
 slug = ""
-translationKey = ""
-relCanonical = ""                                                   # the actual URL of the post; also used for disqus ID and url
+translationKey = "{SLUG}-{DATE}"
+relCanonical = "https://im.youronly.one/{BLOG-NAME}/{POST-TITLE}-{DATE}/"                                                   # the actual URL of the post; also used for disqus ID and url
 #disqus_url = ""                                                    # automatic in YourOnly.One setup
 #disqus_identifier = ""                                             # highly recommended by Disqus; automatic in YourOnly.One setup
 
@@ -26,8 +26,8 @@ comments = true
 toc = true
 
 #audio = [""]                                                        # used by og:audio, etc.
-images = [""]                                                       # used by og:images, etc.; first image is cover image
-#videos = [""]                                                       # used by og:video, etc.
+images = ["https://img.youronly.one/"]                                                       # used by og:images, etc.; first image is cover image
+#videos = ["https://www.youtube.com/watch?v="]                                                       # used by og:video, etc.
 
 type = "review"                                                           # article, sitepage, review
 
@@ -226,7 +226,7 @@ SUMMARY
 
   src=""
   link=""
-  linkrel=""
+  linkrel="noopener external"
   thumbnailurl=""
 
   title=""
@@ -253,7 +253,7 @@ SUMMARY
 
   attribto=""
   attriburl=""
-  attribrel=""
+  attribrel="noopener external"
 
   cc0country=""
   cc0countrycode=""
@@ -261,7 +261,7 @@ SUMMARY
 
   contentloc=""
   contentlocurl=""
-  contentlocrel=""
+  contentlocrel="noopener external"
   contentreferencetime=""
 >}}
 
@@ -287,7 +287,7 @@ SUMMARY
   platform=""
 
   id=""
-  linkrel=""
+  linkrel="noopener external"
   isplaylist=false
   isloop=false
   starttime=""
@@ -320,7 +320,7 @@ SUMMARY
 
   attribto=""
   attriburl=""
-  attribrel=""
+  attribrel="noopener external"
 
   cc0country=""
   cc0countrycode=""
@@ -328,7 +328,7 @@ SUMMARY
 
   contentloc=""
   contentlocurl=""
-  contentlocrel=""
+  contentlocrel="noopener external"
   contentreferencetime=""
 >}}
 
@@ -343,10 +343,10 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
 {{< image
   type="imagecoverattrib"
 
-  isrepresentativeofpage=false
+  isrepresentativeofpage=true
 
-  link=""
-  linkrel=""
+  link="https://img.youronly.one/"
+  linkrel="noopener external"
   thumbnailurl=""
 
   title=""
@@ -363,9 +363,9 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
   copyrightnotice=""
   credittext=""
 
-  attribto=""
-  attriburl=""
-  attribrel=""
+  attribto="I'M YourOnly.One"
+  attriburl="https://im.youronly.one/"
+  attribrel="noopener external"
 
   cc0country=""
   cc0countrycode=""
