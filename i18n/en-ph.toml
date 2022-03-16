@@ -70,6 +70,8 @@
   [series]
     one = "1 Series"
     other = "{{ .Count }} Series"
+  [partofseries]
+    other = "Part of series:"
   [post]
     one = "1 Post"
     other = "{{ .Count }} Posts"

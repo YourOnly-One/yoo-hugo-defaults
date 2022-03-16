@@ -70,6 +70,8 @@
   [series]
     one = "1세트"
     other = "{{ .Count }}세트"
+  [partofseries]
+    other = "시리즈의 일부:"
   [post]
     one = "1기사"
     other = "{{ .Count }}기사"
