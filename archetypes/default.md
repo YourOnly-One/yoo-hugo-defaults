@@ -137,6 +137,9 @@ SUMMARY
 
 <!--more-->
 
+<!-- markdownlint-disable MD000 -->
+<!-- markdownlint-eable MD000 -->
+
 > ***TAGLINE***
 
 {{% sembox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
@@ -148,11 +151,13 @@ SUMMARY
 {{% /quotebox %}}
 
 ## Header
+
 Test here.[^a]
 
 [^a]: Florabase: [Allamanda L.](https://florabase.dpaw.wa.gov.au/browse/profile/21926); [Fair Use](https://florabase.dpaw.wa.gov.au/help/copyright)
 
 ## Image code
+
 {{< image
   height=""
   width=""
@@ -204,13 +209,13 @@ Test here.[^a]
 >}}
 
 ## Other markdown codes
+
 [SOME_LINK](https://example.com)
 
-[POST_TITLE]({{< ref "/FILENAME.md" >}} "TITLE_ATTRIBUTE")
-
-[POST_TITLE]({{< relref path="document.md" lang="ja" >}} "TITLE_ATTRIBUTE")
+[POST_TITLE]({{< relref path="default.md" lang="ja" >}} "TITLE_ATTRIBUTE")
 
 ## Official trailer / 公式予告編 / 공식 예고편
+
 {{< video
   height=""
   width=""
@@ -265,12 +270,14 @@ Test here.[^a]
 >}}
 
 ## OST
+
 {{< music src="https://open.spotify.com/embed/playlist/CHANGE_THIS" >}}
 
 ## Attribution, Usage, &amp; Leave your links
+
 Simply follow the attribution shown underneath each photo, or whichever is acceptable within the bounds of CC-BY-SA 4.0 International license. In addition to that, I would also appreciate if you leave your links below or in Instagram, who knows, I might mention your site (and usage) one day.
 
--------
+---
 
 {{< image
   type="imagecoverattrib"
@@ -304,7 +311,7 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
   cc0countryurl=""
 >}}
 
--------
+---
 
 注意：Google翻訳
 고시 : Google 번역
