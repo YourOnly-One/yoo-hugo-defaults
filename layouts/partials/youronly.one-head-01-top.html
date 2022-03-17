@@ -15,7 +15,7 @@
 {{ range .AlternativeOutputFormats }}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />
 {{- end }}
-{{- /* <meta name="robots" content="{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}noindex{{ else if .Params.metarobots }}{{ .Params.metarobots }}{{ else }}index{{ end }}, follow" /> */ -}}
+{{- /* <meta name="robots" content="{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}noindex{{ else if .Params.metarobots }}{{ .Params.metarobots }}{{ else }}index{{ end }}, follow" /> */}}
 <meta name="robots" content="{{ if .Params.metarobots }}{{ .Params.metarobots }}{{ else }}index{{ end }}, follow" />
 {{ with .Params.redirectto }}<meta http-equiv="refresh" content="0; url='{{ . }}'" />{{ end }}
 <meta name="author" content="{{ $.Param "author.name" }}" />
