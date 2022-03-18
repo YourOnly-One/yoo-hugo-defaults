@@ -10,7 +10,7 @@
     other = "2006년 01월 02일 15시 04분 -0700"
   [datetimetzn]
     other = "2006년 01월 02일 15시 04분 MST"
-  [date]
+  [dateonly]
     other = "2006년 01월 02일"
   [timelongtzd]
     other = "15시 04분 05초 -0700"

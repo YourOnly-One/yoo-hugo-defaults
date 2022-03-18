@@ -10,7 +10,7 @@
     other = "2006-01-02 15:04Z07:00"
   [datetimetzn]
     other = "2006-01-02 15:04 MST"
-  [date]
+  [dateonly]
     other = "2006-01-02"
   [timelongtzd]
     other = "15:04:05Z07:00"
@@ -121,6 +121,11 @@
   [quote_src]
     other = ","             # add a space before if using a word
 # END: YourOnly.One: attribution and license
+
+# BGN: phrases
+  [viewlargermap]
+    other = "View larger map"
+# END: phrases
 
 # BGN: generic words
   [word_is]
