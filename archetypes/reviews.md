@@ -1,43 +1,41 @@
 +++
 title = "「」 review/批評/비평"
-description = ""                                                    # For Schema.org; OpenGraph; Twitter Cards; and post summary
+description = ""
 
-date = "{{ .Date }}"                                        # manually adjust to local timezone
-#lastmod = "2022-04-07T17:53:01"                                     # manually adjust to local timezone
+date = "{{ .Date }}"                                          # manually adjust to local timezone
+#lastmod = "2022-04-07T17:53:01"                                       # manually adjust to local timezone
 
 #aliases = [""]
 slug = ""
 translationKey = "{SLUG}-{DATE}"
-relCanonical = "https://im.youronly.one/{BLOG-NAME}/{POST-TITLE}-{DATE}/"                                                   # the actual URL of the post; also used for disqus ID and url
-#disqus_url = ""                                                    # automatic in YourOnly.One setup
-#disqus_identifier = ""                                             # highly recommended by Disqus; automatic in YourOnly.One setup
+relCanonical = "https://im.youronly.one/{BLOG-NAME}/{POST-TITLE}-{DATE}/"
 
 channels = [""]
-#categories = [""]                                                   # taxonomy
-#keywords = [""]                                                     # meta keywords
-#series = [""]                                                       # subset of series taxonomy
-#tags = [""]                                                         # taxonomy
+#categories = [""]
+#keywords = [""]
+#series = [""]
+#tags = [""]
 
 comments = true
-#weight = ""                                                        # post weight, if we want granular control of post order
+#weight = ""
 
 #featured = true
 #math = true
 toc = true
 
-#audio = [""]                                                        # used by og:audio, etc.
-images = ["https://img.youronly.one/"]                                                       # used by og:images, etc.; first image is cover image
-#videos = ["https://www.youtube.com/watch?v="]                                                       # used by og:video, etc.
+#audio = [""]                                                          # used for og:audio, etc.
+images = ["https://img.youronly.one/"]                                # used for og:images, etc.; first image is cover image
+#videos = ["https://www.youtube.com/watch?v="]                         # used for og:video, etc.
 
 type = "review"                                                           # article, sitepage, review
 
 draft = true
 
-#license = ""                                                       # only set if the post license is not the same as the site license
+#license = ""                                                         # only set if the post license is not the same as the site license
 
-contenttypes = ["CriticReview"]                                                 # Semantic Web JSON-LD
-[semweb]                                                            # Semantic Web JSON-LD
-  type = "Book, Movie, TVSeries"                                    # choose one
+contenttypes = ["CriticReview"]                                                   # Semantic Web JSON-LD
+[semweb]                                                              # Semantic Web JSON-LD
+  type = ""                                                           # Book, Movie, TVSeries
 
 # For adaptations
 #[semweb.product.isbasedon]
@@ -196,78 +194,13 @@ SUMMARY
 
 <!--more-->
 
-> ***TAGLINE***
-
-<!-- markdownlint-disable MD000 -->
-<!-- markdownlint-eable MD000 -->
-
-{{% sembox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
-  content
-{{% /sembox %}}
-
-{{% quotebox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
-  content
-{{% /quotebox %}}
-
 ## Synopsis / 筋書き / 개요
-
-[^a]: SOURCE_NAME: [「PRODUCT_TITLE」 synopsis/筋書き/개요](LINK); [CC-BY-SA 3.0 Unported License](https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License)
 
 ## Story / 物語 / 이야기
 
 ## Performance / 演技 / 공연
 
 ## Image code
-
-{{< image
-  height=""
-  width=""
-  class=""
-  style=""
-  type=""
-
-  isrepresentativeofpage=false
-
-  src=""
-  link=""
-  linkrel="noopener external"
-  thumbnailurl=""
-
-  title=""
-  caption=""
-  alt=""
-  embeddedtextcaption=""
-  inlanguage=""
-
-  datecreated=""
-  datepublished=""
-
-  objheight=""
-  objwidth=""
-
-  infoalign=""
-
-  licensecode=""
-  licenseurl=""
-  licensename=""
-
-  acquirelicensepage=""
-  copyrightnotice=""
-  credittext=""
-
-  attribto=""
-  attriburl=""
-  attribrel="noopener external"
-
-  cc0country=""
-  cc0countrycode=""
-  cc0countryurl=""
-
-  contentloc=""
-  contentlocurl=""
-  contentlocrel="noopener external"
-  contentreferencetime=""
->}}
 
 ## Music / 音楽 / 음악
 
@@ -277,72 +210,11 @@ SUMMARY
 
 ## Other markdown codes
 
-[SOME_LINK](https://example.com)
-
-[POST_TITLE]({{< relref path="reviews.md" lang="ja" >}} "TITLE_ATTRIBUTE")
-
 ## Official trailer / 公式予告編 / 공식 예고편
-
-{{< video
-  height=""
-  width=""
-  class=""
-  style=""
-  platform=""
-
-  id=""
-  linkrel="noopener external"
-  isplaylist=false
-  isloop=false
-  starttime=""
-  endtime=""
-
-  title=""
-  caption=""
-  inlanguage=""
-
-  datecreated=""
-  datepublished=""
-
-  director=""
-  musicby=""
-
-  objframesize=""
-  objquality=""
-  objheight=""
-  objwidth=""
-
-  infoalign=""
-
-  licensecode=""
-  licenseurl=""
-  licensename=""
-
-  acquirelicensepage=""
-  copyrightnotice=""
-  credittext=""
-
-  attribto=""
-  attriburl=""
-  attribrel="noopener external"
-
-  cc0country=""
-  cc0countrycode=""
-  cc0countryurl=""
-
-  contentloc=""
-  contentlocurl=""
-  contentlocrel="noopener external"
-  contentreferencetime=""
->}}
 
 ## OST
 
-{{< music src="https://open.spotify.com/embed/playlist/CHANGE_THIS" >}}
-
 ## Attribution, Usage, &amp; Leave your links
-
-Simply follow the attribution shown underneath each photo, or whichever is acceptable within the bounds of CC-BY-SA 4.0 International license. In addition to that, I would also appreciate if you leave your links below or in Instagram, who knows, I might mention your site (and usage) one day.
 
 ---
 
@@ -352,7 +224,7 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
   isrepresentativeofpage=true
 
   link="https://img.youronly.one/"
-  linkrel="noopener external"
+  linkrel="noopener"
   thumbnailurl=""
 
   title=""
@@ -371,7 +243,7 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
 
   attribto="I'M YourOnly.One"
   attriburl="https://im.youronly.one/"
-  attribrel="noopener external"
+  attribrel="noopener"
 
   cc0country=""
   cc0countrycode=""
