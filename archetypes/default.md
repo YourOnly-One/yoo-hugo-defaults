@@ -24,7 +24,7 @@ comments = true
 toc = true
 
 #audio = [""]                                                          # used for og:audio, etc.
-images = ["https://img.youronly.one/"]                                # used for og:images, etc.; first image is cover image
+#images = ["https://img.youronly.one/{FILENAME}.webp"]                 # used for og:images, etc.; first image is cover image
 #videos = ["https://www.youtube.com/watch?v="]                         # used for og:video, etc.
 
 type = ""                                                           # article, sitepage, review
@@ -207,7 +207,7 @@ Test here.[^a]
 
 [SOME_LINK](https://example.com)
 
-[POST_TITLE]({{< relref path="default.md" lang="ja" >}} "TITLE_ATTRIBUTE")
+[POST_TITLE]({{< ref path="default.md" lang="ja" >}} "TITLE_ATTRIBUTE")
 
 ## Official trailer / 公式予告編 / 공식 예고편
 
