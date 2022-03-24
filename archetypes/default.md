@@ -141,11 +141,11 @@ SUMMARY
 > ***TAGLINE***
 
 {{% sembox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
-  content
+content
 {{% /sembox %}}
 
 {{% quotebox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
-  content
+content
 {{% /quotebox %}}
 
 ## Header
@@ -157,110 +157,112 @@ Test here.[^a]
 ## Image code
 
 {{< image
-  height=""
-  width=""
-  class=""
-  style=""
+height=""
+width=""
+class=""
+style=""
 
-  isrepresentativeofpage=false
+isrepresentativeofpage=false
 
-  src=""
-  link=""
-  linkrel="noopener"
-  thumbnailurl=""
+src=""
+link=""
+linkrel="noopener"
+thumbnailurl=""
 
-  title=""
-  caption=""
-  alt=""
-  embeddedtextcaption=""
-  inlanguage=""
+title=""
+caption=""
+alt=""
+embeddedtextcaption=""
+inlanguage=""
 
-  datecreated=""
-  datepublished=""
+datecreated=""
+datepublished=""
 
-  objheight=""
-  objwidth=""
+objheight=""
+objwidth=""
 
-  licensecode=""
-  licenseurl=""
-  licensename=""
+licensecode=""
+licenseurl=""
+licensename=""
 
-  acquirelicensepage=""
-  copyrightnotice=""
-  credittext=""
+acquirelicensepage=""
+copyrightnotice=""
+credittext=""
 
-  attribto=""
-  attriburl=""
-  attribrel="noopener"
+attribto=""
+attriburl=""
+attribrel="noopener"
 
-  cc0country=""
-  cc0countrycode=""
-  cc0countryurl=""
+cc0country=""
+cc0countrycode=""
+cc0countryurl=""
 
-  contentloc=""
-  contentlocurl=""
-  contentlocrel="noopener external"
-  contentreferencetime=""
->}}
+contentloc=""
+contentlocurl=""
+contentlocrel="noopener external"
+contentreferencetime=""
+
+> }}
 
 ## Other markdown codes
 
 [SOME_LINK](https://example.com)
 
-[POST_TITLE]({{< ref path="default.md" lang="ja" >}} "TITLE_ATTRIBUTE")
+{{< reflangtitle path="" lang="" >}}
 
 ## Official trailer / 公式予告編 / 공식 예고편
 
 {{< video
-  height=""
-  width=""
-  class=""
-  style=""
-  platform=""
+height=""
+width=""
+class=""
+style=""
+platform=""
 
-  id=""
-  linkrel="noopener external"
-  isplaylist=false
-  isloop=false
-  starttime=""
-  endtime=""
+id=""
+linkrel="noopener external"
+isplaylist=false
+isloop=false
+starttime=""
+endtime=""
 
-  title=""
-  caption=""
-  inlanguage=""
+title=""
+caption=""
+inlanguage=""
 
-  datecreated=""
-  datepublished=""
+datecreated=""
+datepublished=""
 
-  director=""
-  musicby=""
+director=""
+musicby=""
 
-  objframesize=""
-  objquality=""
-  objheight=""
-  objwidth=""
+objframesize=""
+objquality=""
+objheight=""
+objwidth=""
 
-  licensecode=""
-  licenseurl=""
-  licensename=""
+licensecode=""
+licenseurl=""
+licensename=""
 
-  acquirelicensepage=""
-  copyrightnotice=""
-  credittext=""
+acquirelicensepage=""
+copyrightnotice=""
+credittext=""
 
-  attribto=""
-  attriburl=""
-  attribrel="noopener external"
+attribto=""
+attriburl=""
+attribrel="noopener external"
 
-  cc0country=""
-  cc0countrycode=""
-  cc0countryurl=""
+cc0country=""
+cc0countrycode=""
+cc0countryurl=""
 
-  contentloc=""
-  contentlocurl=""
-  contentlocrel="noopener external"
-  contentreferencetime=""
->}}
+contentloc=""
+contentlocurl=""
+contentlocrel="noopener external"
+contentreferencetime=""
+
+> }}
 
 ## OST
 
@@ -273,38 +275,39 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
 ---
 
 {{< image
-  type="imagecoverattrib"
+type="imagecoverattrib"
 
-  isrepresentativeofpage=true
+isrepresentativeofpage=true
 
-  link="https://img.youronly.one/"
-  linkrel="noopener"
-  thumbnailurl=""
+link="https://img.youronly.one/"
+linkrel="noopener"
+thumbnailurl=""
 
-  title=""
-  caption=""
-  alt=""
-  embeddedtextcaption=""
-  inlanguage=""
+title=""
+caption=""
+alt=""
+embeddedtextcaption=""
+inlanguage=""
 
-  licensecode=""
-  licenseurl=""
-  licensename=""
+licensecode=""
+licenseurl=""
+licensename=""
 
-  acquirelicensepage=""
-  copyrightnotice=""
-  credittext=""
+acquirelicensepage=""
+copyrightnotice=""
+credittext=""
 
-  attribto="I'M YourOnly.One"
-  attriburl="https://im.youronly.one/"
-  attribrel="noopener"
+attribto="I'M YourOnly.One"
+attriburl="https://im.youronly.one/"
+attribrel="noopener"
 
-  cc0country=""
-  cc0countrycode=""
-  cc0countryurl=""
->}}
+cc0country=""
+cc0countrycode=""
+cc0countryurl=""
+
+> }}
 
 ---
 
-注意：Google翻訳
+注意：Google 翻訳
 고시 : Google 번역
