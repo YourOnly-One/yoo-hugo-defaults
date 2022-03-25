@@ -3,7 +3,7 @@ title = ""
 description = ""
 
 date = "{{ .Date }}"                                          # manually adjust to local timezone
-#lastmod = "2022-04-07T17:53:01"                                       # manually adjust to local timezone
+#lastmod = "2022-04-07T17:53:01+08:00"                                       # manually adjust to local timezone
 
 #aliases = [""]
 slug = ""
@@ -135,15 +135,14 @@ SUMMARY
 
 <!--more-->
 
-<!-- markdownlint-disable MD000 -->
-<!-- markdownlint-eable MD000 -->
-
 > ***TAGLINE***
 
+<!-- markdownlint-disable-next-line -->
 {{% sembox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
 content
 {{% /sembox %}}
 
+<!-- markdownlint-disable-next-line -->
 {{% quotebox boxstyle="qbs_generic" qmarkstyle="qbm_doublequotationmark" boxcolour="qbc_blue" attribalign="txt_right" srctitle="" srclink="" srcrel="noopener external" attribto="" attriblink="" attribrel="noopener external" %}}
 content
 {{% /quotebox %}}
@@ -156,6 +155,7 @@ Test here.[^a]
 
 ## Image code
 
+<!-- markdownlint-disable -->
 {{< image
 height=""
 width=""
@@ -201,17 +201,19 @@ contentloc=""
 contentlocurl=""
 contentlocrel="noopener external"
 contentreferencetime=""
-
-> }}
+>}}
+<!-- markdownlint-enable -->
 
 ## Other markdown codes
 
 [SOME_LINK](https://example.com)
 
+<!-- markdownlint-disable-next-line -->
 {{< reflangtitle path="" lang="" >}}
 
 ## Official trailer / 公式予告編 / 공식 예고편
 
+<!-- markdownlint-disable -->
 {{< video
 height=""
 width=""
@@ -261,11 +263,12 @@ contentloc=""
 contentlocurl=""
 contentlocrel="noopener external"
 contentreferencetime=""
-
-> }}
+>}}
+<!-- markdownlint-enable -->
 
 ## OST
 
+<!-- markdownlint-disable-next-line -->
 {{< music src="https://open.spotify.com/embed/playlist/CHANGE_THIS" >}}
 
 ## Attribution, Usage, &amp; Leave your links
@@ -274,6 +277,7 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
 
 ---
 
+<!-- markdownlint-disable -->
 {{< image
 type="imagecoverattrib"
 
@@ -304,8 +308,8 @@ attribrel="noopener"
 cc0country=""
 cc0countrycode=""
 cc0countryurl=""
-
-> }}
+>}}
+<!-- markdownlint-enable -->
 
 ---
 
