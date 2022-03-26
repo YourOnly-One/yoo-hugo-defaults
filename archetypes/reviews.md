@@ -1,9 +1,9 @@
 +++
-title = "「」 review/批評/비평"
+title = "《》 review/批評/비평"
 description = ""
 
 date = "{{ .Date }}"                                          # manually adjust to local timezone
-#lastmod = "2022-04-07T17:53:01"                                       # manually adjust to local timezone
+#lastmod = "2022-04-07T17:53:01+00:00"                                       # manually adjust to local timezone
 
 #aliases = [""]
 slug = ""
