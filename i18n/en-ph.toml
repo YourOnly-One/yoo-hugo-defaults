@@ -2,6 +2,8 @@
 # https://gohugo.io/content-management/multilingual/#translation-of-strings
 
 # BGN: Date and Time Formats
+  [datetimeformat]
+    other = "2006-01-02"
   [datetimelongtzd]
     other = "2006-01-02 15:04:05Z07:00"
   [datetimelongtzn]
@@ -10,6 +12,8 @@
     other = "2006-01-02 15:04Z07:00"
   [datetimetzn]
     other = "2006-01-02 15:04 MST"
+  [datetimeonly]
+    other = "2006-01-02 15:04"
   [dateonly]
     other = "2006-01-02"
   [timelongtzd]
@@ -20,6 +24,8 @@
     other = "15:04Z07:00"
   [timetzn]
     other = "15:04 MST"
+  [timeonly]
+    other = "15:04"
 # END: Date and Time Formats
 
 # BGN: YourOnly.One: Global
