@@ -3,7 +3,7 @@
 
 # BGN: Date and Time Formats
   [datetimeformat]
-    other = "2006-01-02"
+    other = "2006-01-02 15:04 MST"
   [datetimelongtzd]
     other = "2006-01-02 15:04:05Z07:00"
   [datetimelongtzn]
