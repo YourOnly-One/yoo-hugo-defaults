@@ -8,7 +8,9 @@ date = "{{ .Date }}"                                          # manually adjust 
 #aliases = [""]
 slug = ""
 translationKey = "{SLUG}-{DATE}"
-relCanonical = "https://im.youronly.one/{BLOG-NAME}/{POST-TITLE}-{DATE}/"
+relCanonical = "https://im.youronly.one/{BLOG-NAME}/{LANG}/{POST-TITLE}-{DATE}/"
+#disqus_url = ""                                                    # no use case in sites by Yelosan Publishing (YourOnly.One)
+#disqus_identifier = ""                                             # set if slug date of this content is different from main translation (en-PH)
 
 channels = [""]
 #categories = [""]
@@ -24,7 +26,7 @@ comments = true
 toc = true
 
 #audio = [""]                                                          # used for og:audio, etc.
-#images = ["https://img.youronly.one/{FILENAME}.webp"]                 # used for og:images, etc.; first image is cover image
+#images = ["https://img.youronly.one/{LETTER}/{FILENAME}.webp"]                 # used for og:images, etc.; first image is cover image
 #videos = ["https://www.youtube.com/watch?v="]                         # used for og:video, etc.
 
 type = ""                                                           # article, sitepage, review
@@ -157,50 +159,50 @@ Test here.[^a]
 
 <!-- markdownlint-disable -->
 {{< image
-height=""
-width=""
-class=""
-style=""
+  height=""
+  width=""
+  class=""
+  style=""
 
-isrepresentativeofpage=false
+  isrepresentativeofpage=false
 
-src=""
-link=""
-linkrel="noopener"
-thumbnailurl=""
+  src=""
+  link=""
+  linkrel="noopener"
+  thumbnailurl=""
 
-title=""
-caption=""
-alt=""
-embeddedtextcaption=""
-inlanguage=""
+  title=""
+  caption=""
+  alt=""
+  embeddedtextcaption=""
+  inlanguage=""
 
-datecreated=""
-datepublished=""
+  datecreated=""
+  datepublished=""
 
-objheight=""
-objwidth=""
+  objheight=""
+  objwidth=""
 
-licensecode=""
-licenseurl=""
-licensename=""
+  licensecode=""
+  licenseurl=""
+  licensename=""
 
-acquirelicensepage=""
-copyrightnotice=""
-credittext=""
+  acquirelicensepage=""
+  copyrightnotice=""
+  credittext=""
 
-attribto=""
-attriburl=""
-attribrel="noopener"
+  attribto=""
+  attriburl=""
+  attribrel="noopener"
 
-cc0country=""
-cc0countrycode=""
-cc0countryurl=""
+  cc0country=""
+  cc0countrycode=""
+  cc0countryurl=""
 
-contentloc=""
-contentlocurl=""
-contentlocrel="noopener external"
-contentreferencetime=""
+  contentloc=""
+  contentlocurl=""
+  contentlocrel="noopener external"
+  contentreferencetime=""
 >}}
 <!-- markdownlint-enable -->
 
@@ -215,54 +217,54 @@ contentreferencetime=""
 
 <!-- markdownlint-disable -->
 {{< video
-height=""
-width=""
-class=""
-style=""
-platform=""
+  height=""
+  width=""
+  class=""
+  style=""
+  platform=""
 
-id=""
-linkrel="noopener external"
-isplaylist=false
-isloop=false
-starttime=""
-endtime=""
+  id=""
+  linkrel="noopener external"
+  isplaylist=false
+  isloop=false
+  starttime=""
+  endtime=""
 
-title=""
-caption=""
-inlanguage=""
+  title=""
+  caption=""
+  inlanguage=""
 
-datecreated=""
-datepublished=""
+  datecreated=""
+  datepublished=""
 
-director=""
-musicby=""
+  director=""
+  musicby=""
 
-objframesize=""
-objquality=""
-objheight=""
-objwidth=""
+  objframesize=""
+  objquality=""
+  objheight=""
+  objwidth=""
 
-licensecode=""
-licenseurl=""
-licensename=""
+  licensecode=""
+  licenseurl=""
+  licensename=""
 
-acquirelicensepage=""
-copyrightnotice=""
-credittext=""
+  acquirelicensepage=""
+  copyrightnotice=""
+  credittext=""
 
-attribto=""
-attriburl=""
-attribrel="noopener external"
+  attribto=""
+  attriburl=""
+  attribrel="noopener external"
 
-cc0country=""
-cc0countrycode=""
-cc0countryurl=""
+  cc0country=""
+  cc0countrycode=""
+  cc0countryurl=""
 
-contentloc=""
-contentlocurl=""
-contentlocrel="noopener external"
-contentreferencetime=""
+  contentloc=""
+  contentlocurl=""
+  contentlocrel="noopener external"
+  contentreferencetime=""
 >}}
 <!-- markdownlint-enable -->
 
@@ -279,35 +281,35 @@ Simply follow the attribution shown underneath each photo, or whichever is accep
 
 <!-- markdownlint-disable -->
 {{< image
-type="imagecoverattrib"
+  type="imagecoverattrib"
 
-isrepresentativeofpage=true
+  isrepresentativeofpage=true
 
-link="https://img.youronly.one/"
-linkrel="noopener"
-thumbnailurl=""
+  link="https://img.youronly.one/"
+  linkrel="noopener"
+  thumbnailurl=""
 
-title=""
-caption=""
-alt=""
-embeddedtextcaption=""
-inlanguage=""
+  title=""
+  caption=""
+  alt=""
+  embeddedtextcaption=""
+  inlanguage=""
 
-licensecode=""
-licenseurl=""
-licensename=""
+  licensecode=""
+  licenseurl=""
+  licensename=""
 
-acquirelicensepage=""
-copyrightnotice=""
-credittext=""
+  acquirelicensepage=""
+  copyrightnotice=""
+  credittext=""
 
-attribto="I'M YourOnly.One"
-attriburl="https://im.youronly.one/"
-attribrel="noopener"
+  attribto="I'M YourOnly.One"
+  attriburl="https://im.youronly.one/"
+  attribrel="noopener"
 
-cc0country=""
-cc0countrycode=""
-cc0countryurl=""
+  cc0country=""
+  cc0countrycode=""
+  cc0countryurl=""
 >}}
 <!-- markdownlint-enable -->
 

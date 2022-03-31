@@ -8,7 +8,9 @@ date = "{{ .Date }}"                                          # manually adjust 
 #aliases = [""]
 slug = ""
 translationKey = "{SLUG}-{DATE}"
-relCanonical = "https://im.youronly.one/{BLOG-NAME}/{POST-TITLE}-{DATE}/"
+relCanonical = "https://im.youronly.one/{BLOG-NAME}/{LANG}/{POST-TITLE}-{DATE}/"
+#disqus_url = ""                                                    # no use case in sites by Yelosan Publishing (YourOnly.One)
+#disqus_identifier = ""                                             # set if slug date of this content is different from main translation (en-PH)
 
 channels = [""]
 #categories = [""]
@@ -24,7 +26,7 @@ comments = true
 toc = true
 
 #audio = [""]                                                          # used for og:audio, etc.
-#images = ["https://img.youronly.one/{FILENAME}.webp"]                 # used for og:images, etc.; first image is cover image
+#images = ["https://img.youronly.one/{LETTER}/{FILENAME}.webp"]                 # used for og:images, etc.; first image is cover image
 #videos = ["https://www.youtube.com/watch?v="]                         # used for og:video, etc.
 
 type = "review"                                                           # article, sitepage, review
@@ -218,6 +220,7 @@ SUMMARY
 
 ---
 
+<!-- markdownlint-disable -->
 {{< image
   type="imagecoverattrib"
 
@@ -249,6 +252,7 @@ SUMMARY
   cc0countrycode=""
   cc0countryurl=""
 >}}
+<!-- markdownlint-enable -->
 
 ---
 
