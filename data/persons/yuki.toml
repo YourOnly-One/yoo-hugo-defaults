@@ -12,8 +12,8 @@ name = "JC John Sese Cuneta"
 sameas = [
 	"https://keybase.io/yukino/",
 	"https://iam.youronly.one/",
-	"https://youronly.one/",
 	"https://im.youronly.one/",
+	"https://youronly.one/",
 	"https://mastodon.social/@YourOnlyOne",
 	"https://pixelfed.social/youronlyone",
 	"https://eyeem.com/u/youronlyone",
@@ -21,10 +21,11 @@ sameas = [
 	"https://last.fm/user/Laibcoms",
 	"https://trakt.tv/users/youronlyone",
 	"https://open.spotify.com/user/jcsesecuneta",
-	"https://facebook.com/jcsesecuneta/",
-	"https://twitter.com/YourOnlyONEofcl",
 	"https://instagram.com/YourOnly.One",
-	"https://facebook.com/YourOnly.ONE.ofcl"
+	"https://youtube.com/YourOnlyONEofcl",
+	"https://twitter.com/YourOnlyONEofcl",
+	"https://facebook.com/YourOnly.ONE.ofcl",
+	"https://facebook.com/jcsesecuneta/"
 ]
 url = "https://iam.youronly.one/"
 
